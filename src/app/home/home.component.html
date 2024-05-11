@@ -1,19 +1,7 @@
+<app-navbar></app-navbar>
+
 <div class="body">
-    <nav>
-        <div class="logo">
-            <img src="/assets/Group 50 (1).png" alt="">
-            <h2 class="acortt">Acortt</h2>
-        </div>
-        <div class="input">
-            <input class="search" type="text" id ="search" placeholder="Pesquisar">
-            <button class="botao_pesquisa"><img src="./assets/search.svg"></button> 
-        </div>
-        <div class="link">
-            <button class="criar_conta"><img class="icone" src="./assets/log-in-verde.svg" alt=""><a href>Criar conta</a></button>
-            <button class="entrar"><img class="icone" src="./assets/log-in-preto.svg" alt=""><a href>Entrar</a></button>
-        </div>
-    
-    </nav>
+   
     <div class="menu">
         <ul class="link_links">
             <li><a class="nav-list" href="#">Notebook</a></li>
@@ -28,12 +16,14 @@
         <img class="img_banner" src="/assets/Banner.png" alt="">
     </div>
     <h2 class="h2_conteudo">Mais procurados em Eletrônicos e Celulares</h2>
-    <div class="card">
-        <div class="conteudo_card">
-            <h2>10.000,00</h2>
-            <h3>Iphone X</h3>
-            <span>Faculdade</span><br>
-            <span>data e hora</span>
+    <div class="estrutura-card">
+        <div class="card" *ngFor="let produto of lista"> 
+            <div class="conteudo_card">
+                <h2>{{produto.titulo}}</h2>
+                <h3>{{produto.subtitulo}}</h3>
+                <span>{{produto.local}}</span><br>
+                <span>{{produto.data}}</span>
+            </div>
         </div>
     </div>
 

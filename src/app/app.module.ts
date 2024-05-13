@@ -8,7 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { PublicarComponent } from './publicar/publicar.component';
+import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -17,7 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    PublicarComponent,
+    ProfileComponent,
     NavbarComponent
   ],
   imports: [

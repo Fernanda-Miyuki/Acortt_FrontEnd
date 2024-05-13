@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarlogComponent } from './navbarlog/navbarlog.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     LoginComponent,
     RegisterComponent,
     ProfileComponent,
-    NavbarComponent
+    NavbarComponent,
+    NavbarlogComponent
   ],
   imports: [
     BrowserModule,

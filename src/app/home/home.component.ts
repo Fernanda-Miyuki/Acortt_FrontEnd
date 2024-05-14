@@ -16,7 +16,7 @@ export class HomeComponent {
   lista = [
     {
       urlImage:
-      'https://images.unsplash.com/photo-1553241930-484af6f8506d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHBsYWNhJTIwbWFlfGVufDB8fDB8fHww',    
+      '/assets/anh-nhat-PdALQmfEqvE-unsplash.jpg',    
       titulo: 'R$ 5000,00',
       subtitulo: 'Placa mãe',
       local: 'Fatec',

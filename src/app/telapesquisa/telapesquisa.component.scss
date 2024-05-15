@@ -1,0 +1,140 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    background: #1E1E1E;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+   
+.link_links{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 80px;
+    background-color: #00C515;
+    font-size: 14px;
+    font-family: "Michroma", sans-serif;
+    font-style: normal;
+    padding-left:20px; 
+    height: 55px;
+    padding: 0 10%;
+    
+}
+
+
+.h2_conteudo{
+    display:flex;
+    align-items: center;
+    color: white;
+    margin-left: 10%;
+    padding: 50px 0 50px 0; 
+}
+
+.estrutura-card{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 3px 4px 1px #00000069;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    margin: 3% 3%;
+    padding: 15px;
+    background: #161616;
+}
+
+.img-smartphone {
+    width: 194px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.estrutura-card-notebook{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-notebook{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 3px 4px 1px #00000069;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    margin: 3% 3%;
+    padding: 15px;
+    background: #161616;
+}
+
+
+.conteudo_card{
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;  
+}
+
+.data{
+    font-size: 10px;
+}
+
+.img-banner{
+    width: 194px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 6px;
+    
+}
+
+.conteudo_card_notebook{
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.michroma-regular {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+h4,h2,span {
+    color: #fff
+}
+
+@media screen and (min-width: 768px) {
+    .banner{
+        align-items: center;
+    }
+}

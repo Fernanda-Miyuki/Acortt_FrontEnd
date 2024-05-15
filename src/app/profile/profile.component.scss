@@ -1,0 +1,54 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    background: #1E1E1E;
+}
+
+.nav-list{
+    color: black;
+    background: #00C515;
+}
+
+a{
+    text-decoration: none;
+    color:#00C515;
+    font-weight: 500;
+    align-items: center;
+}
+
+.link_links{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 80px;
+    background-color: #00C515;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    padding-left:20px; 
+    height: 55px;
+    padding: 0 10%;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    color:#00C515;
+    font-weight: 500;
+    font-size: small;
+}
+
+h2, h3, h4{
+    color: #F1F1F1;
+}
+
+span{
+    color: #F1F1F1;
+}

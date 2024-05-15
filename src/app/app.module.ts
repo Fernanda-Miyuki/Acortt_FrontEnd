@@ -8,8 +8,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { PublicarComponent } from './publicar/publicar.component';
+import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarlogComponent } from './navbarlog/navbarlog.component';
 import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
 
 
@@ -19,10 +20,10 @@ import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    PublicarComponent,
+    ProfileComponent,
     NavbarComponent,
     TelapesquisaComponent,
-    
+    NavbarlogComponent
   ],
   imports: [
     BrowserModule,

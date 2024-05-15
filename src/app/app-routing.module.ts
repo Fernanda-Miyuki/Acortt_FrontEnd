@@ -4,13 +4,15 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { PublicarComponent } from './publicar/publicar.component';
+import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home' , pathMatch: 'full'},
   { path: 'home', component:  HomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'register', component:  RegisterComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'publicar', component: PublicarComponent},
+  { path: 'telapesquisa', component: TelapesquisaComponent}
   
 ];
 

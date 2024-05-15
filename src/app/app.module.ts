@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PublicarComponent } from './publicar/publicar.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     RegisterComponent,
     PublicarComponent,
     NavbarComponent,
+    TelapesquisaComponent,
     
   ],
   imports: [

@@ -9,9 +9,15 @@ a{
     text-decoration: none;
     color:black;
     font-weight: 500;
-   
 }
 
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+   
 .link_links{
     display: flex;
     list-style: none;
@@ -29,24 +35,16 @@ a{
     
 }
 
-.menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
-}
-
 .banner{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:346px;
     padding-bottom:60px;
     
 }
 
 .img_banner{
+    min-width: 800px;
     width: 80%;
     
 }
@@ -175,4 +173,10 @@ footer{
 
 h4,h2,span {
     color: #fff
+}
+
+@media screen and (min-width: 768px) {
+    .banner{
+        align-items: center;
+    }
 }

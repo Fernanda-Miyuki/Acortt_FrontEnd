@@ -27,16 +27,14 @@ nav{
 .logo{
     display: flex;
     justify-content: center;
-    margin: 0 10px 0 0;
+    margin: 0 10px -30px 0;
     padding-left: 10%;
-    gap:20px;
 }
 
 .acortt{
     display: flex;
     align-items: center;
 }
-
 
 
 .input{
@@ -49,7 +47,7 @@ nav{
 }
     
 .search{ 
-    width: 300px;
+    width: 350px;
     height: 30px;
     border-radius: 5px; 
     border: 1px solid ;
@@ -57,16 +55,11 @@ nav{
     border: 2px solid #00C515;   
 }
 
+
 input::placeholder{
     color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
-
-.icone{
-    padding-right: 6px;
-    align-items: center; 
-    
-}
-
 
 .nav-link{
     list-style: none;
@@ -111,6 +104,8 @@ a{
 
 .criar_conta:hover{
     background-color: #00C515;
+    transition: 0.5s;
+    transform: ease-in-out;
     a{
         color:black;
     }
@@ -133,6 +128,8 @@ a{
 .entrar:hover{
     background-color: transparent;
     border: 1px solid #00C515;
+    transition: 0.5s;
+    transform: ease-in-out;
     a,img{
         color:#00C515;
     }

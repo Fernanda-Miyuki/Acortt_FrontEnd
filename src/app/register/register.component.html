@@ -2,25 +2,25 @@
     <h1>Crie sua conta conosco</h1>
     <div class="container">
         <div class="buttonsForm">
-            <div class="btnColor"></div>
-            <button id="btnSignin">Informações</button>
-            <button id="btnSignup">Finalizar</button>
+            <div #btnColor class="btnColor"></div>
+            <button id="btnSignin" (click)="toSignUp()">Informações</button>
+            <button id="btnSignup" (click)="toSignIn()">Finalizar</button>
         </div>
     
-        <form id="Cadastrar">
-            <input class="text campoCadastro" placeholder="Nome" />
-            <input class="text campoCadastro" placeholder="Email" />
-            <input class="password campoCadastro" placeholder="Senha" />
-            <input class="password campoCadastro" placeholder="Confirmar Senha" />
+        <form #Cadastrar id="Cadastrar" [formGroup]="formRegister" (ngSubmit)="onRegisterPt1()">
+            <input class="text campoCadastro" placeholder="Nome" formControlName="name" required/>
+            <input class="text campoCadastro" placeholder="Email" formControlName="email" />
+            <input class="password campoCadastro" placeholder="Senha" formControlName="password" />
+            <input class="password campoCadastro" placeholder="Confirmar Senha" formControlName="confirmPassword" />
     
             <div class="divCheck">
                 <input type="checkbox" />
                 <span>Lembrar Senha</span>
             </div>
-            <button class="submit raise buttons">Continuar</button>
+            <button type="submit" class="submit raise buttons">Continuar</button>
         </form>
     
-        <form id="Logar">
+        <form #Logar id="Logar">
             <input class="text campoCadastro" placeholder="Telefone" />
             <select name="Faculdade" class="select campoCadastro">
                 <option value="">Instituição de ensino</option>

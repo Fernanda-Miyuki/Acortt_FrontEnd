@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<app-navbarlog></app-navbarlog>
 <div class="body">
     <div class="menu">
         <ul class="link_links">
@@ -9,6 +9,28 @@
         </ul>
     </div>
     
+        <h2 class="h2_conteudo">Resultado da pesquisa</h2>        <div class="estrutura-card">
+            <div class="card" *ngFor="let produto of lista">
+                <img class="img-smartphone" src="{{produto.urlImage}}" alt="image"> 
+                <div class="conteudo_card">
+                    <h2 class="titulo">{{produto.titulo}}</h2>
+                    <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                    <span class="local">{{produto.local}}</span>
+                    <span class="data">{{produto.data}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="estrutura-card">
+            <div class="card" *ngFor="let produto of lista">
+                <img class="img-smartphone" src="{{produto.urlImage}}" alt="image"> 
+                <div class="conteudo_card">
+                    <h2 class="titulo">{{produto.titulo}}</h2>
+                    <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                    <span class="local">{{produto.local}}</span>
+                    <span class="data">{{produto.data}}</span>
+                </div>
+            </div>
+        </div>
         <div class="estrutura-card">
             <div class="card" *ngFor="let produto of lista">
                 <img class="img-smartphone" src="{{produto.urlImage}}" alt="image"> 
@@ -54,4 +76,27 @@
                 </div>    
             </div>
         </div>
+        <div class="estrutura-card-notebook">
+            <div class="card-notebook" *ngFor="let produto of produtos"> 
+                <img class="img-banner" src="{{produto.urlImage}}" alt="hghg">
+                <div class="conteudo_card_notebook">
+                    <h2 class="titulo">{{produto.titulo}}</h2>
+                    <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                    <span class="local">{{produto.local}}</span>
+                    <span class="data">{{produto.data}}</span>
+                </div>    
+            </div>
+        </div>
+        <div class="estrutura-card-notebook">
+            <div class="card-notebook" *ngFor="let produto of produtos"> 
+                <img class="img-banner" src="{{produto.urlImage}}" alt="hghg">
+                <div class="conteudo_card_notebook">
+                    <h2 class="titulo">{{produto.titulo}}</h2>
+                    <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                    <span class="local">{{produto.local}}</span>
+                    <span class="data">{{produto.data}}</span>
+                </div>    
+            </div>
+        </div>
+        <footer>@ Acortt Association Ltda. -  Av Shunji Nishimura, 825-601, - Pompeia, SP</footer>
 </div>

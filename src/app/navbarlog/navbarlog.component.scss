@@ -65,7 +65,7 @@ input::placeholder{
 }
 
 .icone{
-    padding-right: 6px;
+    display: flex;
     align-items: center; 
     
 }
@@ -79,16 +79,24 @@ input::placeholder{
     
 }
 
-.link{
+.sair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}   
+
+.home{
     display: flex;
     justify-content: center;
     padding-right:10%;
-    gap:80px; 
-}
+    align-items: center;
+    gap: 10px;
+}   
 
 a{
     text-decoration: none;
-    color:black;
+    color: #00C515;
     font-weight: 500;
     align-items: center;
 }
@@ -109,53 +117,7 @@ a{
     align-items: center; 
 }
 
-.sair_conta{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border: 1px solid #00C515;
-    background: transparent;
-    border-radius: 5px;
-    width: 120px;
-    height: 30px;
-    font-size: 14px;
-    font-family: "Michroma", sans-serif;
-    font-style: normal;
 
-    a{
-        color:#00C515;
-    }
-}
-
-.sair_conta:hover{
-    background-color: #00C515;
-    a{
-        color:black;
-    }
-    
-}
-
-.home{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #00C515;
-    border-radius: 5px;
-    width: 120px;
-    height: 30px;
-    border: none;
-    font-size: 14px;
-    font-style: normal;
-}
-
-.home:hover{
-    background-color: transparent;
-    border: 1px solid #00C515;
-    a,img{
-        color:#00C515;
-    }
-}
 
 
 

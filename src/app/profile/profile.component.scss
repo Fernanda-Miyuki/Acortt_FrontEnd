@@ -52,3 +52,93 @@ h2, h3, h4{
 span{
     color: #F1F1F1;
 }
+
+.main_content{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+
+}
+
+.card_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 3px 4px 1px #00000069;
+    border-radius: 5px;
+    width: 1000px;
+    height: 400px;
+    padding: 15px;
+    background: #161616;
+}
+
+.editar_perfil{
+    font-size: 12px;
+}
+
+.editar{
+    float: right;
+    margin-top: -130px;
+    margin-right: -20px;
+}
+
+
+.conteudo_profile{
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card_anuncio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 3px 4px 1px #00000069;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    padding: 15px;
+    background: #161616;
+}
+
+.img-smartphone {
+    width: 194px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.conteudo_card{
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;  
+}
+
+.data{
+    font-size: 10px;
+}
+
+.estrutura-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 13%;
+    gap: 50px;
+    margin-top: 3%;
+}
+
+.anuncios{
+    margin-left: 15%;
+}
+
+.contato, .phone{
+    display: inline;
+}
+
+.local{
+    font-size: 12px;
+}

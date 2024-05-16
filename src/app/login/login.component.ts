@@ -8,15 +8,26 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  credentials = { email:'', senha:''};
+  email: string = ""
+  senha: string = ""
   errorMessage = '';
 
-  constructor(private router: Router, private authService: AuthService) {}
+  constructor(private router: Router, private authService: AuthService) { }
 
 
 
   cadastrar() {
     this.router.navigate(['/register']);
-    
+  }
+
+  login() {
+    this.authService.login({email:this.email,senha:this.senha}).subscribe(
+      () => {
+        this.router.navigate(['/']);
+      },
+      err => {
+        this.errorMessage = err.error.message;
+      }
+    );
   }
 }

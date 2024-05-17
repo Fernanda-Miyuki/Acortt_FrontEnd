@@ -13,8 +13,8 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  register(user: any): Observable<any> {
-    return this.http.post<any>('http://localhost:8080/CadastrarUsuario', user);
+  register(user: {nome: string, email: string, senha: string, confirmarSenha: string, telefone: string, faculdade: string }): Observable<any> {
+    return this.http.post<any>('http://localhost:8080/user', user);
   }
 
   login(credentials: { email: string, senha: string }): Observable<any> {

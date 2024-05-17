@@ -23,7 +23,7 @@ export class ProfileComponent {
       urlImage:
       '/assets/simerpreet-singh-OOVomt_6wEY-unsplash.jpg',
       titulo: 'R$ 1000,00',
-      subtitulo: 'Celular A20',
+      subtitulo: 'Samsung A20',
       local: 'Fatec Shunji Nishimura de Pompeia',
       data: '10/05/2024 - 10:00',
     },
@@ -39,7 +39,7 @@ export class ProfileComponent {
       urlImage:
       '/assets/simerpreet-singh-OOVomt_6wEY-unsplash.jpg',
       titulo: 'R$ 3000,00',
-      subtitulo: 'Samsung Galaxy',
+      subtitulo: 'Motorola G Pro',
       local: 'Fatec Shunji Nishimura de Pompeia',
       data: '10/05/2024 - 10:00',
     },
@@ -47,7 +47,7 @@ export class ProfileComponent {
       urlImage:
       '/assets/simerpreet-singh-OOVomt_6wEY-unsplash.jpg',
       titulo: 'R$ 3000,00',
-      subtitulo: 'Samsung Galaxy',
+      subtitulo: 'Redmi 12',
       local: 'Fatec Shunji Nishimura de Pompeia',
       data: '10/05/2024 - 10:00',
     },

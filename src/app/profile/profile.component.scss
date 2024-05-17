@@ -16,6 +16,25 @@ a{
     align-items: center;
 }
 
+.button{
+    color:#F1F1F1;
+    text-decoration: none;
+    font-weight: 800;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+button:hover{
+    background-color:#00eb17;
+    a{
+        color:#1E1E1E;
+    }
+}
+
+a:hover{
+    color: #F1F1F1;
+}
+
 .link_links{
     display: flex;
     list-style: none;
@@ -58,8 +77,12 @@ span{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 3%;
-
 }
+
+.profile_section{
+    flex-direction: column;
+}
+
 
 .card_profile{
     display: flex;
@@ -67,7 +90,7 @@ span{
     justify-content: center;
     box-shadow: 1px 3px 4px 1px #00000069;
     border-radius: 5px;
-    width: 1000px;
+    width: 600px;
     height: 400px;
     padding: 15px;
     background: #161616;
@@ -79,16 +102,51 @@ span{
 
 .editar{
     float: right;
-    margin-top: -130px;
+    margin-top: -100px;
     margin-right: -20px;
 }
 
-
 .conteudo_profile{
-    flex-direction: column;
     padding: 20px;
 }
 
+.anunciar{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 85%;
+}
+
+.publicar{
+    border: none;
+    outline: none;
+    background-color:#00C515;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    box-shadow: 1px 2px 3px 1px #00000069;
+}
+
+.edit, .editar_perfil{
+    padding-right: 5px;
+}
+
+.nome_user, .contato_user, .faculdade_user{
+    padding-bottom: 20px;
+}
+
+.contato_user h3, .contato_user img{
+    padding-right: 10px;
+}
+
+.content-anuncio{
+    padding-bottom: 10%;
+    padding-left: 5%;
+}
+
+.anuncios{
+    margin-left: 3%;
+}
 .card_anuncio{
     display: flex;
     flex-direction: column;
@@ -126,14 +184,10 @@ span{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 13%;
     gap: 50px;
     margin-top: 3%;
 }
 
-.anuncios{
-    margin-left: 15%;
-}
 
 .contato, .phone{
     display: inline;
@@ -141,4 +195,23 @@ span{
 
 .local{
     font-size: 12px;
+}
+
+footer{
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background-color: #00C515;
+    width: 100%;
+    height: 40px;
+    padding:15px 0 15px 0;
+    
+}
+
+@media screen and (max-width: 1500px) {
+    .main_content{
+        flex-wrap: wrap;
+    }
 }

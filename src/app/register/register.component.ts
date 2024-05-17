@@ -10,18 +10,18 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
-  nome: string = ""
-  email: string = ""
-  senha: string = ""
-  confirmarSenha: string = ""
-  telefone: string = ""
-  faculdade: string = ""
+  usu_nome: string = ""
+  usu_email: string = ""
+  usu_senha: string = ""
+  //usu_confirmarSenha: string = ""
+  usu_tel: string = ""
+  facul_id: string = ""
   errorMessage = '';
 
   constructor(private router: Router, private authService: AuthService) { }
 
   cadastrar() {
-    this.authService.register({nome:this.nome,email:this.email,senha:this.senha,confirmarSenha:this.confirmarSenha,telefone:this.telefone,faculdade:this.faculdade}).subscribe(
+    this.authService.register({usu_nome:this.usu_nome,usu_email:this.usu_email,usu_senha:this.usu_senha,usu_tel:this.usu_tel,facul_id:this.facul_id}).subscribe(
       () => {
         this.router.navigate(['/']);
       },

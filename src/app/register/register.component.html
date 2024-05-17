@@ -8,10 +8,10 @@
         </div>
     
         <form id="Cadastrar">
-            <input class="text campoCadastro" placeholder="Nome" id="nome" name="nome" type="nome" [(ngModel)]="nome" required />
-            <input class="text campoCadastro" placeholder="Email" id="email" name="email" type="email" [(ngModel)]="email" required />
-            <input class="password campoCadastro" placeholder="Senha" id="password" name="password" type="password" [(ngModel)]="senha" required />
-            <input class="password campoCadastro" placeholder="Confirmar Senha" id="confirmpassword" name="confirmpassword" type="confirmpassword" [(ngModel)]="confirmarSenha" required />
+            <input class="text campoCadastro" placeholder="Nome" id="nome" name="nome" type="nome" [(ngModel)]="usu_nome" required />
+            <input class="text campoCadastro" placeholder="Email" id="email" name="email" type="email" [(ngModel)]="usu_email" required />
+            <input class="password campoCadastro" placeholder="Senha" id="password" name="password" type="password" [(ngModel)]="usu_senha" required />
+            <!--<input class="password campoCadastro" placeholder="Confirmar Senha" id="confirmpassword" name="confirmpassword" type="confirmpassword" [(ngModel)]="confirmarSenha" required />-->
 
     
             <div class="divCheck">
@@ -22,8 +22,8 @@
         </form>
     
         <form id="Logar">
-            <input class="text campoCadastro" placeholder="Telefone" id="telefone" name="telefone" type="telefone" [(ngModel)]="telefone" required />
-            <select name="Faculdade" class="select campoCadastro" id="faculdade" name="faculdade" type="faculdade" [(ngModel)]="faculdade" required >
+            <input class="text campoCadastro" placeholder="Telefone" id="telefone" name="telefone" type="telefone" [(ngModel)]="usu_tel" required />
+            <select name="Faculdade" class="select campoCadastro" id="faculdade" name="faculdade" type="faculdade" [(ngModel)]="facul_id" required >
                 <option value="">Instituição de ensino</option>
                 <option value="1">Fatec Shunji Nishimura</option>
             </select>

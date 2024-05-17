@@ -25,8 +25,52 @@
             </div>
         </div>
     </div>
+    <div class="estrutura-card">
+        <div class="card" *ngFor="let produto of lista">
+            <img class="img-smartphone" src="{{produto.urlImage}}" alt="image"> 
+            <div class="conteudo_card">
+                <h2 class="titulo">{{produto.titulo}}</h2>
+                <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                <span class="local">{{produto.local}}</span>
+                <span class="data">{{produto.data}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="estrutura-card">
+        <div class="card" *ngFor="let produto of lista">
+            <img class="img-smartphone" src="{{produto.urlImage}}" alt="image"> 
+            <div class="conteudo_card">
+                <h2 class="titulo">{{produto.titulo}}</h2>
+                <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                <span class="local">{{produto.local}}</span>
+                <span class="data">{{produto.data}}</span>
+            </div>
+        </div>
+    </div>
 
     <h2 class="h2_conteudo">Mais procurados em Notebooks</h2>
+    <div class="estrutura-card-notebook">
+        <div class="card-notebook" *ngFor="let produto of produtos"> 
+            <img class="img-banner" src="{{produto.urlImage}}" alt="hghg">
+            <div class="conteudo_card_notebook">
+                <h2 class="titulo">{{produto.titulo}}</h2>
+                <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                <span class="local">{{produto.local}}</span>
+                <span class="data">{{produto.data}}</span>
+            </div>    
+        </div>
+    </div>
+    <div class="estrutura-card-notebook">
+        <div class="card-notebook" *ngFor="let produto of produtos"> 
+            <img class="img-banner" src="{{produto.urlImage}}" alt="hghg">
+            <div class="conteudo_card_notebook">
+                <h2 class="titulo">{{produto.titulo}}</h2>
+                <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                <span class="local">{{produto.local}}</span>
+                <span class="data">{{produto.data}}</span>
+            </div>    
+        </div>
+    </div>
     <div class="estrutura-card-notebook">
         <div class="card-notebook" *ngFor="let produto of produtos"> 
             <img class="img-banner" src="{{produto.urlImage}}" alt="hghg">

@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarlogComponent } from './navbarlog/navbarlog.component';
 import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
+import { TelamodalComponent } from './telamodal/telamodal.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
     ProfileComponent,
     NavbarComponent,
     TelapesquisaComponent,
-    NavbarlogComponent
+    NavbarlogComponent,
+    TelamodalComponent
   ],
   imports: [
     BrowserModule,

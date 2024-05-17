@@ -15,7 +15,7 @@ export class TelapesquisaComponent {
       urlImage:
       '/assets/anh-nhat-PdALQmfEqvE-unsplash.jpg',    
       titulo: 'R$ 5000,00',
-      subtitulo: 'Placa mãe',
+      subtitulo: 'Samsung s22 Ultra',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',
     },
@@ -23,7 +23,7 @@ export class TelapesquisaComponent {
       urlImage:
       '/assets/simerpreet-singh-OOVomt_6wEY-unsplash.jpg',
       titulo: 'R$ 1000,00',
-      subtitulo: 'Celular A20',
+      subtitulo: 'Iphone 15',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',
     },

@@ -23,19 +23,22 @@
                         <h2 class="name">Jeferson Jesus</h2>  
                     </div>
                     <div class="contato_user">
-                        <h3 class="contato">Contato</h3><img class ="phone" src="./assets/phone.svg">
+                        <h3 class="contato">(14) 9999-9999</h3>
+                    </div>
+                    <div class="email_user">
+                        <h3 class="email">jeferson.jesus@gmail.com</h3>
                     </div>
                     <div class="faculdade_user">
                         <h4 class="faculdade">Fatec Shunji Nishimura de Pompeia - SP</h4>
                     </div>
                 </div>  
             </div>
-            <div class="anunciar">
-                <button class="publicar"><a class="button" href="telamodal">Anunciar +</a></button>
-            </div>
         </div>
         <div class="content-anuncio">
-            <h2 class="anuncios">Anúncios</h2>
+            <h2 class="anuncios">Seus anúncios</h2>
+            <div class="anunciar">
+                <button class="publicar"><a class="button" role="button" href="telamodal">Adicionar anúncio</a></button>
+            </div>
             <div class="estrutura-card">
                 <div class="card_anuncio" *ngFor="let produto of anuncio">
                     <img class="img-smartphone" src="{{produto.urlImage}}" alt="image"> 
@@ -48,7 +51,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
-
     <footer>@ Acortt Association Ltda. -  Av Shunji Nishimura, 825-601, - Pompeia, SP</footer>
 </div>

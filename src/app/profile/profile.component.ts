@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { TelamodalComponent } from '../telamodal/telamodal.component';
 
 @Component({
   selector: 'app-profile',
@@ -7,7 +9,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent {
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private modalService: NgbModal
+    ) {}
 
 
   anuncio = [
@@ -60,4 +65,8 @@ export class ProfileComponent {
       data: '10/05/2024 - 10:00',
     },
    ];
+
+   openModal():void{
+    this.modalService.open(TelamodalComponent, {size:'xl'});
+   }
   } 

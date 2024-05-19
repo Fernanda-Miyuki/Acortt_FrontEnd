@@ -1,13 +1,5 @@
 <app-navbarlog></app-navbarlog>
 <div class="body">
-    <div class="menu">
-        <ul class="link_links">
-            <li><a class="nav-list" href="#">Notebooks</a></li>
-            <li><a class="nav-list" href="#">Celulares</a></li>
-            <li><a class="nav-list" href="#">Componentes</a></li>
-            <li><a class="nav-list" href="#">Acessórios</a></li> 
-        </ul>
-    </div>
     <div class="main_content">
         <div class="profile_section">
             <div class="card_profile">
@@ -37,14 +29,14 @@
         <div class="content-anuncio">
             <h2 class="anuncios">Seus anúncios</h2>
             <div class="anunciar">
-                <button class="publicar"><a class="button" role="button" href="telamodal">Adicionar anúncio</a></button>
+                <button (click)="openModal()" class="publicar"><a class="button" role="button">Adicionar anúncio</a></button>
             </div>
             <div class="estrutura-card">
                 <div class="card_anuncio" *ngFor="let produto of anuncio">
                     <img class="img-smartphone" src="{{produto.urlImage}}" alt="image"> 
                     <div class="conteudo_card">
-                        <h2 class="titulo">{{produto.titulo}}</h2>
-                        <h3 class="subtitulo">{{produto.subtitulo}}</h3>
+                        <h2 class="titulo-anuncio">{{produto.titulo}}</h2>
+                        <h3 class="subtitulo-anuncio">{{produto.subtitulo}}</h3>
                         <span class="local">{{produto.local}}</span>
                         <span class="data">{{produto.data}}</span>
                     </div>

@@ -19,48 +19,48 @@ export class ProfileComponent {
     {
       urlImage:
       '/assets/anh-nhat-PdALQmfEqvE-unsplash.jpg',    
-      titulo: 'R$ 5000,00',
-      subtitulo: 'Placa mãe',
+      titulo: 'Placa mãe',
+      subtitulo: 'R$ 5000,00',
       local: 'Fatec Shunji Nishimura de Pompeia',
       data: '10/05/2024 - 10:00',
     },
     {
       urlImage:
       '/assets/simerpreet-singh-OOVomt_6wEY-unsplash.jpg',
-      titulo: 'R$ 1000,00',
-      subtitulo: 'Samsung A20',
+      titulo: 'Samsung A20',
+      subtitulo: 'R$ 1000,00',
       local: 'Fatec Shunji Nishimura de Pompeia',
       data: '10/05/2024 - 10:00',
     },
     {
       urlImage:
       '/assets/tim-mossholder-VOXs79vySFo-unsplash (1).jpg',
-      titulo: 'R$ 12000,00',
-      subtitulo: 'Iphone 16',
+      titulo: 'Iphone 16',
+      subtitulo: 'R$ 12000,00',
       local: 'Fatec Shunji Nishimura de Pompeia',
       data: '10/05/2024 - 10:00',
     },
     {
       urlImage:
       '/assets/simerpreet-singh-OOVomt_6wEY-unsplash.jpg',
-      titulo: 'R$ 3000,00',
-      subtitulo: 'Motorola G Pro',
+      titulo: 'Motorola G Pro',
+      subtitulo: 'R$ 3000,00',
       local: 'Fatec Shunji Nishimura de Pompeia',
       data: '10/05/2024 - 10:00',
     },
     {
       urlImage:
       '/assets/simerpreet-singh-OOVomt_6wEY-unsplash.jpg',
-      titulo: 'R$ 3000,00',
-      subtitulo: 'Redmi 12',
+      titulo: 'Redmi 12',
+      subtitulo: 'R$ 3000,00',
       local: 'Fatec Shunji Nishimura de Pompeia',
       data: '10/05/2024 - 10:00',
     },
     {
       urlImage:
       '/assets/simerpreet-singh-OOVomt_6wEY-unsplash.jpg',
-      titulo: 'R$ 3000,00',
-      subtitulo: 'Samsung Galaxy',
+      titulo: 'Samsung Galaxy',
+      subtitulo: 'R$ 3000,00',
       local: 'Fatec Shunji Nishimura de Pompeia',
       data: '10/05/2024 - 10:00',
     },

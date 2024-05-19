@@ -11,6 +11,10 @@ a{
     font-weight: 500;
 }
 
+a:hover{
+    color: #fff;
+}
+
 .menu{
     display: flex;
     justify-content: center;
@@ -69,14 +73,18 @@ a{
     align-items: center;
     color: white;
     margin-left: 10%;
-    padding: 50px 0 50px 0; 
+    padding: 25px 0 25px 0; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .estrutura-card{
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 
@@ -94,6 +102,27 @@ a{
     background: #161616;
 }
 
+.nome-produto{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.valor-produto{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.data, .local{
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #fff;
+}
+
 .img-smartphone {
     width: 194px;
     height: 130px;
@@ -104,8 +133,9 @@ a{
 .estrutura-card-notebook{
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .card-notebook{
@@ -131,10 +161,6 @@ a{
     gap: 15px;  
 }
 
-.data{
-    font-size: 10px;
-}
-
 .img-banner{
     width: 194px;
     height: 130px;
@@ -157,23 +183,15 @@ footer{
     align-items: center;
     justify-content: center;
     font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     background-color: #00C515;
     width: 100%;
-    height: 40px;
-    padding:15px 0 15px 0;
+    height: 50px;
+    padding: 20px 0 20px 0;
     
 }
 
-.michroma-regular {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-
-h4,h2,span {
-    color: #fff
-}
 
 @media screen and (min-width: 768px) {
     .banner{

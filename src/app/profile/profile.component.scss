@@ -14,6 +14,7 @@ a{
     color:#00C515;
     font-weight: 500;
     align-items: center;
+    font-size: 16px;
 }
 
 .button{
@@ -26,18 +27,12 @@ a{
 
 button:hover{
     a{
-        color:#1ec22e;
+        color:#00ff00;
     }
 }
 
 a:hover{
     color: #F1F1F1;
-}
-
-.card{
-    color:#00C515;
-    font-weight: 500;
-    font-size: small;
 }
 
 h2, h3, h4{
@@ -48,28 +43,27 @@ span{
     color: #F1F1F1;
 }
 
-.main_content{
-    display: flex;
+.profile_section{
+    flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 3%;
 }
 
-.profile_section{
-    flex-direction: column;
-}
-
-
 .card_profile{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 3px 3px 4px 3px #2b8333;
     border-radius: 5px;
-    width: 800px;
-    height: 500px;
+    width: 1530px;
+    height: 250px;
     padding: 15px;
-    background: #161616;
+    background: #2c2c2cfb;
+}
+
+.photo_user{
+    float:left;
+    margin-left: -200px;
 }
 
 .editar_perfil{
@@ -78,118 +72,44 @@ span{
 
 .editar{
     float: right;
-    margin-top: -130px;
-    margin-right: -30px;
+    margin-right: -500px;
+
 }
 
 .conteudo_profile{
-    padding: 20px 0px 20px 50px;
+    padding-left: 100px;
+}
+
+.name{
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.contato, .email, .faculdade{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.content-anuncio{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+
+.anuncios{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 .anunciar{
     display: flex;
-    align-items: center;
     float: right;
-    margin-top: -30px;
+    margin-top: -40px;
 }
-
-
-
-.edit, .editar_perfil{
-    padding-right: 5px;
-}
-
-.nome_user, .contato_user, .email_user, .faculdade_user{
-    padding-bottom: 20px;
-}
-
-.contato_user h3, .contato_user img{
-    padding-right: 10px;
-}
-
-.content-anuncio{
-    padding-bottom: 10%;
-    padding-left: 10%;
-}
-
-.anuncios{
-    margin-left: 5%;
-}
-
-.card_anuncio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 1px 3px 4px 1px #00000069;
-    border-radius: 5px;
-    width: 200px;
-    height: 300px;
-    padding: 15px;
-    background: #161616;
-}
-
-.img-smartphone {
-    width: 194px;
-    height: 130px;
-    object-fit: contain;
-    border-radius: 6px;
-}
-
-.conteudo_card{
-    display: flex;
-    flex-direction:column;
-    align-items: start;
-    justify-content: center;
-    gap: 15px;  
-}
-
-.data{
-    font-size: 10px;
-}
-
-.estrutura-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-top: 15%;
-    margin-left: 3%;
-}
-
-
-.contato, .phone{
-    display: inline;
-}
-
-.local{
-    font-size: 12px;
-}
-
-footer{
-    display: flex;
-    color: black;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    background-color: #00C515;
-    width: 100%;
-    height: 40px;
-    padding:15px 0 15px 0;
-    
-}
-
-.titulo-anuncio{
-    font-size: 12px;
-}
-
-@media screen and (max-width: 1700px) {
-    .main_content{
-        flex-wrap: wrap;
-    }
-}
-
 
 .publicar {
     padding: 0.6em 2em;
@@ -210,15 +130,15 @@ footer{
     content: "";
     background: linear-gradient(
       45deg,
-      #e5ff00,
-      #b3ff00,
-      #9dff00,
+      #5fff20,
+      #41ff07,
+      #51ff00,
       #48ff00,
-      #06ff27,
-      #1eff00,
+      #28ff20,
+      #26b439,
       #00ff37,
-      #00ff88,
-      #a6ff00
+      #1dff68,
+      #2bff00
     );
     position: absolute;
     top: -2px;
@@ -256,4 +176,99 @@ footer{
     left: 0;
     top: 0;
     border-radius: 10px;
-  }
+}
+
+.edit, .editar_perfil{
+    padding-right: 5px;
+}
+
+.nome_user, .contato_user, .email_user {
+    padding-bottom: 20px;
+}
+
+
+.card_anuncio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 3px 4px 1px #00000069;
+    border-radius: 5px;
+    width: 200px;
+    height: 330px;
+    padding: 15px;
+    background: #161616;
+}
+
+.img-smartphone {
+    width: 194px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.conteudo_card{
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;  
+}
+
+.nome-produto{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.valor-produto{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.data, .local{
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.estrutura-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 3%;
+}
+
+.local, .data{
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer{
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-color: #00C515;
+    width: 100%;
+    height: 50px;
+    padding: 20px 0 20px 0;
+    
+}
+
+.titulo-anuncio{
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1700px) {
+    .main_content{
+        flex-wrap: wrap;
+    }
+}
+
+

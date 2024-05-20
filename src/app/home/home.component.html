@@ -3,7 +3,7 @@
 <div class="body">
     <div class="menu">
         <ul class="link_links">
-            <li><a class="nav-list" href="#">Notebook</a></li>
+            <li><a class="nav-list" href="#">Notebooks</a></li>
             <li><a class="nav-list" href="#">Celulares</a></li>
             <li><a class="nav-list" href="#">Componentes</a></li>
             <li><a class="nav-list" href="#">Acessórios</a></li> 
@@ -18,8 +18,8 @@
         <div class="card" *ngFor="let produto of lista">
             <img class="img-smartphone" src="{{produto.urlImage}}" alt="image"> 
             <div class="conteudo_card">
-                <h2 class="titulo">{{produto.titulo}}</h2>
-                <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                <h3 class="nome-produto">{{produto.titulo}}</h3>
+                <h2 class="valor-produto">{{produto.subtitulo}}</h2>
                 <span class="local">{{produto.local}}</span>
                 <span class="data">{{produto.data}}</span>
             </div>
@@ -29,8 +29,8 @@
         <div class="card" *ngFor="let produto of lista">
             <img class="img-smartphone" src="{{produto.urlImage}}" alt="image"> 
             <div class="conteudo_card">
-                <h2 class="titulo">{{produto.titulo}}</h2>
-                <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                <h3 class="nome-produto">{{produto.titulo}}</h3>
+                <h2 class="valor-produto">{{produto.subtitulo}}</h2>
                 <span class="local">{{produto.local}}</span>
                 <span class="data">{{produto.data}}</span>
             </div>
@@ -40,8 +40,8 @@
         <div class="card" *ngFor="let produto of lista">
             <img class="img-smartphone" src="{{produto.urlImage}}" alt="image"> 
             <div class="conteudo_card">
-                <h2 class="titulo">{{produto.titulo}}</h2>
-                <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                <h3 class="nome-produto">{{produto.titulo}}</h3>
+                <h2 class="valor-produto">{{produto.subtitulo}}</h2>
                 <span class="local">{{produto.local}}</span>
                 <span class="data">{{produto.data}}</span>
             </div>
@@ -53,8 +53,8 @@
         <div class="card-notebook" *ngFor="let produto of produtos"> 
             <img class="img-banner" src="{{produto.urlImage}}" alt="hghg">
             <div class="conteudo_card_notebook">
-                <h2 class="titulo">{{produto.titulo}}</h2>
-                <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                <h3 class="nome-produto">{{produto.titulo}}</h3>
+                <h2 class="valor-produto">{{produto.subtitulo}}</h2>
                 <span class="local">{{produto.local}}</span>
                 <span class="data">{{produto.data}}</span>
             </div>    
@@ -64,8 +64,8 @@
         <div class="card-notebook" *ngFor="let produto of produtos"> 
             <img class="img-banner" src="{{produto.urlImage}}" alt="hghg">
             <div class="conteudo_card_notebook">
-                <h2 class="titulo">{{produto.titulo}}</h2>
-                <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                <h3 class="nome-produto">{{produto.titulo}}</h3>
+                <h2 class="valor-produto">{{produto.subtitulo}}</h2>
                 <span class="local">{{produto.local}}</span>
                 <span class="data">{{produto.data}}</span>
             </div>    
@@ -75,8 +75,8 @@
         <div class="card-notebook" *ngFor="let produto of produtos"> 
             <img class="img-banner" src="{{produto.urlImage}}" alt="hghg">
             <div class="conteudo_card_notebook">
-                <h2 class="titulo">{{produto.titulo}}</h2>
-                <h4 class="subtitulo">{{produto.subtitulo}}</h4>
+                <h3 class="nome-produto">{{produto.titulo}}</h3>
+                <h2 class="valor-produto">{{produto.subtitulo}}</h2>
                 <span class="local">{{produto.local}}</span>
                 <span class="data">{{produto.data}}</span>
             </div>    

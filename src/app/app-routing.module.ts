@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
+import { TelamodalComponent } from './telamodal/telamodal.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home' , pathMatch: 'full'},
@@ -13,7 +14,7 @@ const routes: Routes = [
   { path: 'register', component:  RegisterComponent },
   { path: 'profile', component: ProfileComponent},
   { path: 'telapesquisa', component: TelapesquisaComponent},
-  { path: 'telamodal', component: TelapesquisaComponent}
+  { path: 'telamodal', component: TelamodalComponent}
 ];
 
 @NgModule({

@@ -1,6 +1,5 @@
-
 nav{
-    background: #1E1E1E;
+    background: #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,8 +10,15 @@ nav{
     padding: 40px 0;   
 }
 
-h2{
+.acortt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+    font-size: 24px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 }
 
 .botao_pesquisa{
@@ -36,16 +42,6 @@ h2{
     gap:20px;
 }
 
-h2{
-    color: #f1f1f1;
-}
-.acortt{
-    display: flex;
-    align-items: center;
-}
-
-
-
 .input{
     display: flex;
     align-items: center;
@@ -66,12 +62,6 @@ h2{
 
 input::placeholder{
     color: black;
-}
-
-.icone{
-    padding-right: 6px;
-    align-items: center; 
-    
 }
 
 

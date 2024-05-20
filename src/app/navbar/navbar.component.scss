@@ -1,6 +1,6 @@
 
 nav{
-    background: #333333;
+    background: #1E1E1E;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +96,6 @@ a{
     font-weight: 500;
     align-items: center;
 }
-
 .criar_conta{
     display: flex;
     align-items: center;
@@ -110,19 +109,16 @@ a{
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
+   
 
-    a{
-        color:#00C515;
-    }
 }
 
 .criar_conta:hover{
-    background-color: #00C515;
-    a{
-        color:black;
-        
-    }
-    
+    box-shadow:0 0 4px 3px #00C515;
+}
+
+a{
+    color:white;
 }
 
 .entrar{
@@ -135,14 +131,15 @@ a{
     height: 30px;
     border: none;
     font-size: 14px;
-    font-style: normal;
+    font-style: normal; 
+       
 }
 
 .entrar:hover{
     background-color: transparent;
     border: 1px solid #00C515;
     a,img{
-        color:#00C515;
+        color:black;
     }
 }
 

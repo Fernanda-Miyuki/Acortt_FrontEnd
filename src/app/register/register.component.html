@@ -6,30 +6,47 @@
             <button id="btnSignin" (click)="toSignUp()">Informações</button>
             <button id="btnSignup" (click)="toSignIn()">Finalizar</button>
         </div>
-    
+
         <form #Cadastrar id="Cadastrar" [formGroup]="formRegister" (ngSubmit)="onRegisterPt1()">
-            <input class="text campoCadastro" placeholder="Nome" formControlName="name" required/>
-            <input class="text campoCadastro" placeholder="Email" formControlName="email" />
-            <input class="password campoCadastro" placeholder="Senha" formControlName="password" />
-            <input class="password campoCadastro" placeholder="Confirmar Senha" formControlName="confirmPassword" />
-    
+            <div class="input-wrapper">
+                <input class="text campoCadastro" type='text' id='nome' required formControlName="name" />
+                <label for='nome' class='placeholder'>Nome</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="text campoCadastro" type='email' id='email' required formControlName="email" />
+                <label for='email' class='placeholder'>Email</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="password campoCadastro" type='password' id='senha' required formControlName="password" />
+                <label for='senha' class='placeholder'>Senha</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="password campoCadastro" type='password' id='confirmarSenha' required formControlName="confirmPassword" />
+                <label for='confirmarSenha' class='placeholder'>Confirmar Senha</label>
+            </div>
+
             <div class="divCheck">
-                <input type="checkbox" />
-                <span>Lembrar Senha</span>
+                <input type="checkbox" id="lembrarSenha"/>
+                <label for="lembrarSenha">Lembrar Senha</label>
             </div>
             <button type="submit" class="submit raise buttons">Continuar</button>
         </form>
-    
+
         <form #Logar id="Logar">
-            <input class="text campoCadastro" placeholder="Telefone" />
-            <select name="Faculdade" class="select campoCadastro">
-                <option value="">Instituição de ensino</option>
-                <option value="1">Fatec Shunji Nishimura</option>
-            </select>
-    
+            <div class="input-wrapper">
+                <input class="text campoCadastro" type='text' id='telefone' required>
+                <label for='telefone' class='placeholder'>Telefone</label>
+            </div>
+                <select name="Faculdade" class="select campoCadastro">
+                    <option value="">Instituição de ensino</option>
+                    <option value="1">Fatec Shunji Nishimura</option>
+                    
+                </select>
+           
+
             <div class="divCheck">
-                <input type="checkbox" required />
-                <span>Termos e condições</span>
+                <input type="checkbox" id="termosCondicoes" required />
+                <label for="termosCondicoes">Termos e condições</label>
             </div>
             <button class="submit raise buttons">Criar conta</button>
         </form>

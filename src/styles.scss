@@ -4,5 +4,16 @@
 *{
     padding: 0;
     margin: 0;
+    // overflow: hidden;
     font-family: 'Montserrat', sans-serif;
+
+}
+
+.cor-fundo{
+    background-color: #1e1e1e;
+}
+
+:root{
+    --main-color: #00C515; ;
+    --bg-color: #1e1e1e;
 }

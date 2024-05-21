@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { __decorate } from "tslib";
 
@@ -7,7 +7,10 @@ import { __decorate } from "tslib";
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
-export class RegisterComponent implements AfterViewInit {
+export class RegisterComponent implements AfterViewInit, OnInit {
+  ngOnInit() {
+    this.toSignUp()
+  }
 
   @ViewChild('Cadastrar') cadastro?: ElementRef<HTMLDivElement>;
   @ViewChild('Logar') login?: ElementRef<HTMLDivElement>;
@@ -27,6 +30,7 @@ export class RegisterComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.restaurarPosicoes();
+    this.toSignUp();
   }
   restaurarPosicoes() {
     if (!this.cadastro || !this.login || !this.btnColor) {

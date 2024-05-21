@@ -12,6 +12,11 @@ import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarlogComponent } from './navbarlog/navbarlog.component';
 import { ProductComponent } from './product/product.component';
+import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
+import { TelamodalComponent } from './telamodal/telamodal.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SliderComponent } from './slider/slider.component';
+
 
 @NgModule({
   declarations: [
@@ -23,14 +28,18 @@ import { ProductComponent } from './product/product.component';
     NavbarComponent,
     NavbarlogComponent,
     ProductComponent,
+    TelapesquisaComponent,
+    NavbarlogComponent,
+    TelamodalComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

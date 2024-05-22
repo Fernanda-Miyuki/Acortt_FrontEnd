@@ -10,39 +10,11 @@
         </ul>
     </div>
 
-    <div class="banner">
-        <img class="img_banner" src="/assets/Banner.png" alt="">
-    </div>
     <app-slider style="display: flex; justify-content: center;"></app-slider>
-    <h2 class="h2_conteudo">Mais procurados em Eletrônicos e Celulares</h2>
-    <div class="estrutura-card">
-        <div class="card" *ngFor="let produto of lista">
-            <img class="img-smartphone" src="{{produto.urlImage}}" alt="image"> 
-            <div class="conteudo_card">
-                <h3 class="nome-produto">{{produto.titulo}}</h3>
-                <h2 class="valor-produto">{{produto.subtitulo}}</h2>
-                <span class="local">{{produto.local}}</span>
-                <span class="data">{{produto.data}}</span>
-            </div>
-        </div>
-    </div>
-   
     
-    <h2 class="h2_conteudo">Mais procurados em Notebooks</h2>
-    <div class="estrutura-card-notebook">
-        <div class="card-notebook" *ngFor="let produto of produtos"> 
-            <img class="img-banner" src="{{produto.urlImage}}" alt="hghg">
-            <div class="conteudo_card_notebook">
-                <h3 class="nome-produto">{{produto.titulo}}</h3>
-                <h2 class="valor-produto">{{produto.subtitulo}}</h2>
-                <span class="local">{{produto.local}}</span>
-                <span class="data">{{produto.data}}</span>
-            </div>    
-        </div>
-    </div>
+    <app-cardslider></app-cardslider>
+    
 
-    
-    
     <footer>@ Acortt Association Ltda. -  Av Shunji Nishimura, 825-601, - Pompeia, SP</footer>
 </div>
 

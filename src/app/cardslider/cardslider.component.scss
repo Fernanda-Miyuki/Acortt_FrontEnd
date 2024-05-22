@@ -1,0 +1,106 @@
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* Adicionando uma largura máxima para garantir que o carrossel não fique muito largo */
+}
+
+.carousel-items {
+    width: 100%;
+}
+
+.h2_conteudo {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 10%;
+    padding: 25px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.estrutura-card,
+.estrutura-card-notebook {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Aumentando o espaço entre os cards */
+}
+
+.card,
+.card-notebook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.4117647059);
+    border-radius: 5px;
+    height: 300px;
+    margin: 20px 10px;
+    width: 200px !important;
+    padding: 15px;
+    background: #161616;
+}
+
+.img-smartphone,
+.img-banner {
+    width: 100%;
+    /* Garantindo que a imagem preencha completamente o espaço disponível */
+    height: 110px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.conteudo_card,
+.conteudo_card_notebook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Reduzindo o espaço entre os elementos */
+}
+
+.nome-produto {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.valor-produto {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.data,
+.local {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        width: 100%;
+
+        .card,
+        .card-notebook {
+            width: calc(50% - 20px);
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .card,
+    .card-notebook {
+        width: calc(100% - 20px);
+    }
+}
+

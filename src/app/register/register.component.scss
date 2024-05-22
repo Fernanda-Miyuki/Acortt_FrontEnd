@@ -22,10 +22,15 @@ h1 {
 h6 {
     color: $color_1;
     top: 85%;
-    left: 39%;
+    left: 39%
+
 }
 
-.structure {
+.custom-login{
+    text-decoration: none;
+}
+
+.custom-structure {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +43,7 @@ h6 {
     transition: 0.5s;
 }
 
-.container {
+.custom-container {
     background-color: $background-color_2;
     padding: 5px;
     width: 350px;
@@ -59,7 +64,7 @@ form {
     height: 400px;
 }
 
-.buttonsForm {
+.custom-buttonsForm {
     margin-top: 30px;
     position: relative;
     border-radius: 30px;
@@ -74,9 +79,9 @@ form {
     }
 }
 
-.btnColor {
+.custom-btnColor {
     position: absolute;
-    width: 120px;
+    width: 140px;
     height: 100%;
     background: linear-gradient(to right, #00C515, #105c17);
     border-radius: 30px;
@@ -84,7 +89,7 @@ form {
     color: $color_2;
 }
 
-.input-wrapper {
+.custom-input-wrapper {
     --padding: 14px;
     position: relative;
     display: flex;
@@ -93,7 +98,7 @@ form {
     margin-top: 15px;
 }
 
-.input-wrapper input {
+.custom-input-wrapper input {
     padding: var(--padding);
     border: 1px solid gray;
     outline: none;
@@ -103,7 +108,7 @@ form {
     color: $color_2;
 }
 
-.input-wrapper .placeholder {
+.custom-input-wrapper .custom-placeholder {
     position: absolute;
     color: gray;
     left: var(--padding);
@@ -111,13 +116,12 @@ form {
     transition: all 0.2s ease-in;
 }
 
-.input-wrapper input:is(:focus, :valid) + .placeholder {
+.custom-input-wrapper input:is(:focus, :valid) + .custom-placeholder {
     transform: translatey(calc(-1 * var(--padding) - 12px)) translatex(-8px);
     font-size: 14px;
 }
 
-
-.select {
+.custom-select {
     border: none;
     border: 1px solid gray;
     margin-top: 20px;
@@ -128,10 +132,9 @@ form {
     background-color: $background-color_1;
     color: gray;
     font-size: 14px;
-    
 }
 
-.submit {
+.custom-submit {
     &:hover {
         background: linear-gradient(to right, #00C515, #105c17);
     }
@@ -152,17 +155,17 @@ form {
     font-family: $font-family_2;
 }
 
-.divCheck {
+.custom-divCheck {
     margin: 10px 0 0 5px;
     width: 85%;
     font-size: 13px;
 }
 
-span, .checkbox-label {
+.custom-span, .custom-checkbox-label {
     color: $color_1;
 }
 
-.raise {
+.custom-raise {
     &:hover {
         box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
         transform: translateY(-0.25em);
@@ -182,7 +185,7 @@ button {
     transition: 0.25s;
 }
 
-.form-check {
+.custom-form-check {
     color: $color_1;
 }
 

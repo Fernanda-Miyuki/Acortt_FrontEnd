@@ -1,10 +1,10 @@
 nav{
-    background: #00C515;
+    background: #333333;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 20px;
-    padding: 40px 0;   
+    padding: 40px 0;
 }
 
 .acortt{
@@ -55,15 +55,14 @@ a:hover{
 .sair{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-right: 50px;
-    
+    align-items: center;  
 }   
 
 .home{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 50px;
 }   
 
 .name{

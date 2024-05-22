@@ -150,7 +150,7 @@ span{
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     animation: glowing-publicar 20s linear infinite;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
     border-radius: 10px;
   }
   
@@ -217,19 +217,13 @@ span{
 
 .nome-produto{
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .valor-produto{
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.data, .local{
-    font-family: "Montserrat", sans-serif;
-    font-size: 10px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 800;
 }
 
 .estrutura-card{
@@ -241,9 +235,15 @@ span{
     margin-top: 3%;
 }
 
-.local, .data{
-    font-size: 12px;
+.data{
+    font-size: 10px;
     font-family: "Montserrat", sans-serif;
+}
+
+.local{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
 
 footer{

@@ -1,0 +1,232 @@
+.main-conteudo{
+    background-color: #242424;
+    border-radius: 5px;
+    border: none;
+}
+
+.titulo-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+    margin-left: 35%;
+}
+
+.info{
+    padding-right: 10px;
+}
+
+.first-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.informacoes{
+    color: #f1f1f1;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin:0;
+}
+
+.form-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a3a3a;
+    color:#f1f1f1;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+
+}
+
+.descricao-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a3a3a;
+    color:#f1f1f1;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+
+}
+
+
+.form-control::placeholder{
+    color:#adadad;
+    font-size: 14px;
+}
+
+.valor-input::placeholder{
+    color:#adadad;
+    font-size: 14px;
+}
+
+.descricao-input::placeholder{
+    color:#adadad;
+    font-size: 14px;
+}
+
+.descricao-input::placeholder{
+    color:#adadad;
+    font-size: 14px;
+}
+
+.form-control:focus{
+    border-color: #36912a;
+    outline: none;
+}
+
+.valor-input:focus{
+    border-color: #36912a;
+    outline: none;
+}
+
+.descricao-input:focus{
+    border-color: #36912a;
+    outline: none;
+}
+
+.select-categoria:focus{
+    border-color: #36912a;
+    outline: none;
+}
+
+.h3_nome, .h3_categoria, .h3_valor, .h3_imagem, .h3_descrição{
+    color:#f1f1f1;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.third-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 5% 3% 5%;
+}
+
+.valor-input{
+    display: flex;
+    background-color: #3a3a3a;
+    color:#f1f1f1;
+    border: 2px solid transparent;
+    height: 40px;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.select-categoria{
+    display: flex;
+    background-color: #3a3a3a;
+    color:#adadad;
+    border: 2px solid transparent;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    transition: border-color 0.3s;
+}
+
+
+.imagem-input{
+    display: flex;
+    background-color: #3a3a3a;
+    color:#adadad;
+    border: none;
+    width: 35%;
+    height: 150px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nome-conteudo{
+    margin: 3% 5% 3% 5%;
+}
+
+.imagem-conteudo{
+    margin: 3% 5% 3% 5%;
+}
+
+.descricao-conteudo{
+    margin: 3% 5% 3% 5%;
+}
+
+.botao-conteudo{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0 5% 0 5%;
+    padding-bottom: 2%;
+}
+
+
+
+.h3_publicar{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(8, 8, 8);
+    margin: 0;
+}
+
+
+.logo, .h3_publicar{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.publicar {
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    height: 40px;
+    width: 140px;
+    outline: none;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.publicar:disabled {
+  pointer-events: none;
+}
+
+.publicar:hover {
+  background-color: #36912a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  .h3_publicar{
+    color: white;
+  }
+}
+
+.publicar:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

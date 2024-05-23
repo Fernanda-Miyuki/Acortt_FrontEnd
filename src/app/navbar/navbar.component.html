@@ -1,17 +1,29 @@
-<nav>
+<nav class="navbar">
     <div class="logo">
-        <img src="/assets/Group 50 (1).png" alt="">
-        <h2 class="acortt">Acortt</h2>
+      <img src="/assets/Group 50 (1).png" alt="">
+      <h2 class="acortt">Acortt</h2>
     </div>
     <div class="input">
-        <input class="search" type="text" id ="search" placeholder="Pesquisar">
-        <button class="botao_pesquisa"><img src="./assets/search.svg"></button>
-        
+      <input class="search" type="text" id ="search" placeholder="Pesquisar">
+      <button class="botao_pesquisa"><img src="./assets/search.svg"></button>
     </div>
     <div class="link">
-        <button class="criar_conta"><a href="register">Criar conta</a></button>
-        <button class="entrar"><a href="login">Entrar</a></button>
+      <button class="criar_conta"><a href="register">Criar conta</a></button>
+      <button class="entrar"><a href="login">Entrar</a></button>
     </div>
-
-</nav> 
-
+    <div class="nav-button">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="register">Criar conta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login">Entrar</a>
+        </li>
+      </ul>
+    </div>
+</nav>

@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { CardsliderComponent } from './cardslider.component';
 
 describe('CardsliderComponent', () => {

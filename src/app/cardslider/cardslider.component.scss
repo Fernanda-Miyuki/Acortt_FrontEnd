@@ -2,7 +2,6 @@
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
-    /* Adicionando uma largura máxima para garantir que o carrossel não fique muito largo */
 }
 
 .carousel-items {
@@ -13,8 +12,7 @@
     display: flex;
     align-items: center;
     color: white;
-    margin-left: 10%;
-    padding: 25px 0;
+    margin: 10px;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -26,7 +24,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    /* Aumentando o espaço entre os cards */
 }
 
 .card,
@@ -47,7 +44,6 @@
 .img-smartphone,
 .img-banner {
     width: 100%;
-    /* Garantindo que a imagem preencha completamente o espaço disponível */
     height: 110px;
     object-fit: contain;
     border-radius: 12px;
@@ -60,7 +56,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    /* Reduzindo o espaço entre os elementos */
+    
 }
 
 .nome-produto {

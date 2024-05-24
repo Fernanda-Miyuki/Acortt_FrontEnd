@@ -16,7 +16,6 @@ import { TelamodalComponent } from './telamodal/telamodal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './slider/slider.component';
 import { CardsliderComponent } from './cardslider/cardslider.component';
-
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SlidercardComponent } from './slidercard/slidercard.component';
 

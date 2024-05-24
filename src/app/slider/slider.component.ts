@@ -20,7 +20,7 @@ export class SliderComponent implements OnInit, OnDestroy {
   intervalId: any;
 
   constructor(config: NgbCarouselConfig) {
-		config.interval = 3000;
+		config.interval = 4000;
 		config.wrap = true;
 		config.keyboard = false;
 		config.pauseOnHover = false;

@@ -8,22 +8,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 0 30px 0;
-    margin-left: 35%;
-}
-
-.info{
-    padding-right: 10px;
-}
-
-.first-line{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-right: 5%;
     margin-left: 5%;
+    padding: 30px 0 30px 0;
 }
-
 
 .informacoes{
     color: #f1f1f1;
@@ -33,7 +21,19 @@
     margin:0;
 }
 
-.form-control{
+
+.info{
+    padding-right: 10px;
+}
+ /* Estilos novos */
+
+ .modal-body{
+   display: flex;
+   flex-direction: column;
+   margin: 0 10% 0 10%;
+ }
+
+.input-nome{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,84 +44,35 @@
     height: 40px;
     border-radius: 8px;
     transition: border-color 0.3s;
-
+    margin-bottom: 3%;
 }
 
-.descricao-input{
-    text-align: initial;
-    background-color: #3a3a3a;
-    color:#f1f1f1;
-    border: 2px solid transparent;
-    width: 100%;
-    height: 300px;
-    border-radius: 8px;
-    transition: border-color 0.3s;
-
-}
-
-
-.form-control::placeholder{
+.input-nome::placeholder{
     color:#adadad;
     font-size: 14px;
 }
 
-.valor-input::placeholder{
-    color:#adadad;
-    font-size: 14px;
-}
-
-.descricao-input::placeholder{
-    color:#adadad;
-    font-size: 14px;
-}
-
-.descricao-input::placeholder{
-    color:#adadad;
-    font-size: 14px;
-}
-
-.form-control:focus{
+.input-nome:focus{
     border-color: #36912a;
     outline: none;
 }
 
-.valor-input:focus{
-    border-color: #36912a;
-    outline: none;
-}
-
-.descricao-input:focus{
-    border-color: #36912a;
-    outline: none;
-}
-
-.select-categoria:focus{
-    border-color: #36912a;
-    outline: none;
-}
-
-.h3_nome, .h3_categoria, .h3_valor, .h3_imagem, .h3_descrição{
-    color:#f1f1f1;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.third-line{
+.group-maior{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 3% 5% 3% 5%;
 }
 
-.valor-input{
+.maior-esquerda{
     display: flex;
-    background-color: #3a3a3a;
-    color:#f1f1f1;
-    border: 2px solid transparent;
-    height: 40px;
-    border-radius: 8px;
-    transition: border-color 0.3s;
+    flex-direction: column;
+}
+
+.superior-esquerda{
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.esquerda{
+    padding-right: 5%;
 }
 
 .select-categoria{
@@ -136,40 +87,116 @@
     transition: border-color 0.3s;
 }
 
+.select-categoria:focus{
+    border-color: #36912a;
+    outline: none;
+}
+
+.valor-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a3a3a;
+    color:#f1f1f1;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.valor-input:focus{
+    border-color: #36912a;
+    outline: none;
+}
+
+.valor-input::placeholder{
+    color:#adadad;
+    font-size: 14px;
+}
+
+.inferior-esquerda{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
 
 .imagem-input{
     display: flex;
     background-color: #3a3a3a;
     color:#adadad;
     border: none;
-    width: 35%;
-    height: 150px;
+    width: 100%;
+    height: 250px;
     border-radius: 8px;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
 }
 
-.nome-conteudo{
-    margin: 3% 5% 3% 5%;
+.maior-direita{
+    margin-left: 10%;
+    margin-right: 0;
 }
-
-.imagem-conteudo{
-    margin: 3% 5% 3% 5%;
-}
-
-.descricao-conteudo{
-    margin: 3% 5% 3% 5%;
-}
-
-.botao-conteudo{
+.descricao-input{
     display: flex;
-    justify-content: right;
-    align-items: center;
-    margin: 0 5% 0 5%;
-    padding-bottom: 2%;
+    background-color: #3a3a3a;
+    color:#f1f1f1;
+    border: 2px solid transparent;
+    width: 400px;
+    height: 340px;
+    border-radius: 8px;
+    transition: border-color 0.3s;
 }
 
+.descricao-input::placeholder{
+    color:#adadad;
+    font-size: 14px;
+}
 
+.descricao-input:focus{
+    border-color: #36912a;
+    outline: none;
+}
+
+.h3_nome, .h3_categoria, .h3_valor, .h3_imagem, .h3_descrição{
+    color:#f1f1f1;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.grupo-button{
+    display: flex;
+    margin: 3% 0 3% 0;
+}
+
+.button-cancelar{
+    margin-right: 70%;
+}
+
+.cancelar{    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #4b4b4b;
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    border: none;
+
+}
+
+.h3_cancelar{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #adadad;
+    margin: 0;
+}
+
+.cancelar:hover{
+    background-color: rgb(173, 16, 16);
+}
 
 .h3_publicar{
     font-family: "Montserrat", sans-serif;
@@ -178,7 +205,6 @@
     color: rgb(8, 8, 8);
     margin: 0;
 }
-
 
 .logo, .h3_publicar{
     display: inline;

@@ -1,7 +1,4 @@
 # Acortt
-
-![AcorT Logo](./path/to/logo.png)
-
 Acortt é uma plataforma inovadora que facilita a troca de aparelhos eletrônicos entre universidades, promovendo a reutilização e a sustentabilidade tecnológica. Este projeto visa conectar instituições acadêmicas e seus alunos para que possam compartilhar recursos tecnológicos de maneira eficiente e econômica.
 
 ## Funcionalidades
@@ -29,7 +26,7 @@ Para executar este projeto localmente, siga as etapas abaixo:
 
 1. Clone o repositório:
     ```sh
-    git clone https://github.com/seu-usuario/acort.git
+    git clone https://github.com/seu-usuario/acortt.git
     ```
 2. Navegue até o diretório do projeto:
     ```sh

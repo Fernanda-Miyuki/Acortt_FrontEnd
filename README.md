@@ -30,7 +30,7 @@ Para executar este projeto localmente, siga as etapas abaixo:
     ```
 2. Navegue até o diretório do projeto:
     ```sh
-    cd acort
+    cd acortt
     ```
 3. Instale as dependências:
     ```sh

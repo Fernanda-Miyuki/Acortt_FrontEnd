@@ -1,5 +1,13 @@
 <app-navbar></app-navbar>
 
+<nav class="flex-nav">
+  <div class="container">
+    <div class="column-xs-8 column-md-6">
+      <!-- Conteúdo adicional do nav, se necessário -->
+    </div>
+  </div>
+</nav>
+
 <div class="body">
   <div class="menu">
     <ul class="link_links" id="wrapper">
@@ -13,29 +21,28 @@
   <main class="principal">
     <div class="container">
       <div class="grid product">
-        <div class="column1 column-md-7">
+        <div class="column-xs-12 column-md-7">
           <div class="product-gallery">
             <div class="product-image">
-              <img class="active" src="https://source.unsplash.com/yNvVnPcurD8">
+              <img #activeImage class="active" src="https://source.unsplash.com/yNvVnPcurD8">
             </div>
             <ul class="image-list">
-              <li class="image-item"><img src="https://source.unsplash.com/ocAuPlfZXEc"></li>
-              <li class="image-item"><img src="https://source.unsplash.com/pduutGbL2-M"></li>
-              <li class="image-item"><img src="https://source.unsplash.com/TxXuh_hAFd8"></li>
+              <li class="image-item"><img #productImages src="https://source.unsplash.com/pduutGbL2-M"></li>
+              <li class="image-item"><img #productImages src="https://source.unsplash.com/ocAuPlfZXEc"></li>
+              <li class="image-item"><img #productImages src="https://source.unsplash.com/TxXuh_hAFd8"></li>
             </ul>
           </div>
         </div>
-
         <div class="column-xs-12 column-md-5">
           <div class="product-details">
-            <h1>Samsung Notebook Galaxy Book3 360</h1>
+            <h3>Samsung Notebook Galaxy Book3 360</h3>
             <h2>R$6319.99</h2>
 
             <div class="profile">
               <h5>By</h5>
               <div class="user">
-                <div class="li" style="--clr:#00C515">
-                  <a href="#" data-text="&nbsp;Jefferson">&nbsp;Jefferson&nbsp;</a>
+                <div class="li" style="--clr:white">
+                  <a href="#" data-text="&nbsp;Jefferson&nbsp;">&nbsp;Jefferson&nbsp;</a>
                 </div>
               </div>
             </div>
@@ -64,7 +71,9 @@
             </div>
 
             <div class="description">
-              <p>Notebook usado à venda. Tem um desempenho confiável para suas tarefas diárias, com um processador potente e uma tela generosa.</p>
+              <p class="descriptionText">Notebook usado à venda. Tem um desempenho confiável para suas tarefas diárias,
+                com um processador
+                potente e uma tela generosa.</p>
             </div>
 
             <button class="exchangeBtn">

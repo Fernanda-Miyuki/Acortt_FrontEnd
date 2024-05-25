@@ -29,21 +29,22 @@
                             <label for="valor-produto">
                                 <h3 class="h3_valor">Valor</h3>
                             </label>
-                            <input class="valor-input" placeholder=" Adicione o valor da venda" type="text" required />
+                            <input class="valor-input"  placeholder=" Adicione o valor da venda" type="text" required />
                         </div>
                     </div>
                     <div class="inferior-esquerda">
-                        <label for="imagem-produto">
+                        <label>
                             <h3 class="h3_imagem">Imagens do Produto</h3>
                         </label>
-                        <input class="imagem-input" type="file" multiple>    
+                        <label class="imagem-produto" for="imagem-produto"></label>
+                        <input class="imagem-input" id="imagem-produto" type="file" multiple>    
                     </div>
                 </div>
                 <div class="maior-direita">
                     <label for="descricao-produto">
                         <h3 class="h3_descrição">Descrição do Produto</h3>
                     </label>
-                    <input class="descricao-input" placeholder="Detalhe o seu produto para um melhor anúncio" type="text" required />
+                    <textarea class="descricao-input" placeholder="Descreva o seu produto para um melhor anuncio"></textarea>
                 </div>
             </div>
             <div class="grupo-button">
@@ -59,10 +60,6 @@
                 </div>
             </div>
         </div>
+
 </div>
 
-
-
-    <!-- <div class="sair">
-            <img (click)="closeModal()" class="x-sair" src="./assets/x-square (1).svg" alt="">
-        </div> -->

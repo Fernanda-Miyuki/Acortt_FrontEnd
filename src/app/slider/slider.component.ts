@@ -37,7 +37,7 @@ export class SliderComponent implements OnInit, OnDestroy {
   startCarousel(): void {
     this.intervalId = setInterval(() => {
       this.nextImage();
-    }, 4000); // Muda a imagem a cada 3 segundos
+    }, 4000); 
   }
 
   nextImage(): void {

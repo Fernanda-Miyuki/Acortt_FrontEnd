@@ -100,12 +100,11 @@ export class CardsliderComponent implements AfterViewInit {
   ];
 
   slickCarouselConfig = {
-    slidesToShow: 5, // Ajuste o número de slides para acomodar os itens duplicados
+    slidesToShow: 5, 
     slidesToScroll: 1,
     dots: true,
     arrows: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    autoplay: false,
     infinite: true,
     responsive: [
       {

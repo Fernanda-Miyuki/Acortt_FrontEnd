@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -7,9 +7,9 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./telamodal.component.scss']
 })
 export class TelamodalComponent {
-  @ViewChild('imagemInput') imagemInput: any; // ViewChild para acessar o input de imagem
+  @ViewChild('imagemInput', { static: false }) imagemInput!: ElementRef<HTMLInputElement>; // ViewChild para acessar o input de imagem
 
-  fileList: string[] = [];
+  fileList: File[] = []; // Lista de arquivos
 
   constructor(private modalService: NgbModal) {}
 
@@ -17,21 +17,23 @@ export class TelamodalComponent {
     this.modalService.dismissAll();
   }
 
-  onFileSelect(): void {
-    const files: FileList | null = this.imagemInput.nativeElement.files;
+  onFileSelect(event: Event): void {
+    const input = this.imagemInput.nativeElement;
     this.fileList = [];
-    if (!files || files.length === 0) {
-      this.fileList.push('Nenhuma imagem selecionada');
-    } else {
+    const files = (event.target as HTMLInputElement).files;
+    if (files) {
       for (let i = 0; i < files.length; i++) {
-        this.fileList.push(files[i].name);
+        this.fileList.push(files[i]);
       }
     }
   }
 
   removeFile(index: number): void {
     this.fileList.splice(index, 1);
-    // Limpar o valor do input de arquivo para permitir que o usuário selecione o mesmo arquivo novamente
-    this.imagemInput.nativeElement.value = '';
+
+    // Atualizar o input de arquivos para refletir a remoção
+    const dataTransfer = new DataTransfer();
+    this.fileList.forEach(file => dataTransfer.items.add(file));
+    this.imagemInput.nativeElement.files = dataTransfer.files;
   }
 }

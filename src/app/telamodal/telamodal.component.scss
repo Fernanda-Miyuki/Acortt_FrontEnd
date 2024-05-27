@@ -60,6 +60,7 @@
 
 .group-maior{
     display: flex;
+
 }
 
 .maior-esquerda{
@@ -149,15 +150,16 @@
 
 
 .maior-direita{
-    margin-left: 10%;
+    margin-left: 26%;
     margin-right: 0;
 }
+
 .descricao-input{
     display: flex;
     background-color: #3a3a3a;
     color:#f1f1f1;
     border: 2px solid transparent;
-    width: 400px;
+    width: 100%;
     height: 340px;
     border-radius: 8px;
     transition: border-color 0.3s;
@@ -273,4 +275,22 @@
   box-shadow: none;
   transform: translateY(0);
 }
+
+
+.file-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.file-name {
+    margin-right: 10px;
+}
+
+.remove-file {
+    cursor: pointer;
+    color: red;
+    font-size: 1.2em;
+}
+
 

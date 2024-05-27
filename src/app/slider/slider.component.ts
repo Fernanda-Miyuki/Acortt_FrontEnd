@@ -9,16 +9,18 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 export class SliderComponent implements OnInit, OnDestroy {
   
   images: string[] = [
-    './assets/piz1.png',
-    './assets/piz2.png',
-    './assets/piz3.png'
+    './assets/1.png',
+    './assets/2.png',
+    './assets/3.png',
+    './assets/4.png',
+    './assets/5.png',
   ];
   currentIndex: number = 0;
   translateX: number = 0;
   intervalId: any;
 
   constructor(config: NgbCarouselConfig) {
-		config.interval = 5000;
+		config.interval = 4000;
 		config.wrap = true;
 		config.keyboard = false;
 		config.pauseOnHover = false;
@@ -35,7 +37,7 @@ export class SliderComponent implements OnInit, OnDestroy {
   startCarousel(): void {
     this.intervalId = setInterval(() => {
       this.nextImage();
-    }, 4000); // Muda a imagem a cada 3 segundos
+    }, 4000); 
   }
 
   nextImage(): void {

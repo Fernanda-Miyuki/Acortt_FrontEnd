@@ -12,7 +12,7 @@ a{
 }
 
 a:hover{
-    color: #fff;
+    color: #00C515;
 }
 
 .menu{
@@ -28,7 +28,6 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 0 0 80px;
     background-color: #333333;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
@@ -36,10 +35,12 @@ a:hover{
     padding-left:20px; 
     height: 55px;
     padding: 0 10%;
-   // border-bottom: 1px solid #00C515;
-    
 }
 
+.icons-menu{
+    padding: 10px;
+    
+}
 .banner{
     display: flex;
     justify-content: center;
@@ -62,119 +63,6 @@ a:hover{
     margin: 20px; 
 }
 
-.imagem_conteudo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;   
-}
-
-.h2_conteudo{
-    display:flex;
-    align-items: center;
-    color: white;
-    margin-left: 10%;
-    padding: 25px 0 25px 0; 
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.estrutura-card{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;   
-}
-
-
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 1px 3px 4px 1px #00000069;
-    border-radius: 5px;
-    width: 200px;
-    height: 300px;
-    margin: 20px 26px;
-    padding: 15px;
-    background: #161616;
-}
-
-.nome-produto{
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #fff;
-}
-
-.valor-produto{
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-}
-
-.data, .local{
-    font-family: "Montserrat", sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-    color: #fff;
-}
-
-.img-smartphone {
-    width: 170px;
-    height: 110px;
-    object-fit: contain;
-    border-radius: 12px;
-}
-
-.estrutura-card-notebook{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-notebook{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 1px 3px 4px 1px #00000069;
-    border-radius: 5px;
-    width: 200px;
-    height: 300px;
-    margin: 20px 26px;
-    padding: 15px;
-    background: #161616;
-}
-
-
-.conteudo_card{
-    display: flex;
-    flex-direction:column;
-    align-items: start;
-    justify-content: center;
-    gap: 15px;  
-}
-
-.img-banner{
-    width: 170px;
-    height: 110px;
-    object-fit: contain;
-    border-radius: 12px;
-}
-
-.conteudo_card_notebook{
-    display: flex;
-    flex-direction:column;
-    align-items: start;
-    justify-content: center;
-    gap: 15px;
-}
-
 footer{
     display: flex;
     color: black;
@@ -191,8 +79,3 @@ footer{
 }
 
 
-@media screen and (min-width: 768px) {
-    .banner{
-        align-items: center;
-    }
-}

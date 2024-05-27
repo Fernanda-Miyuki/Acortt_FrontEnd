@@ -14,6 +14,10 @@ import { NavbarlogComponent } from './navbarlog/navbarlog.component';
 import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
 import { TelamodalComponent } from './telamodal/telamodal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SliderComponent } from './slider/slider.component';
+import { CardsliderComponent } from './cardslider/cardslider.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SlidercardComponent } from './slidercard/slidercard.component';
 
 
 @NgModule({
@@ -26,14 +30,19 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NavbarComponent,
     TelapesquisaComponent,
     NavbarlogComponent,
-    TelamodalComponent
+    TelamodalComponent,
+    SliderComponent,
+    CardsliderComponent,
+    SlidercardComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

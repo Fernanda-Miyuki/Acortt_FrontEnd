@@ -1,53 +1,22 @@
-.body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    background: #1E1E1E;
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-
-a:hover {
-    color: #00C515;
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.link_links {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
+.carousel-items {
     width: 100%;
-    background-color: #333333;
-    font-size: 14px;
-    font-family: "Michroma", sans-serif;
-    padding-left: 20px; 
-    height: 55px;
-    padding: 0 10%;  
-}
-
-.icons-menu {   
-    padding: 10px;
 }
 
 .h2_conteudo {
     display: flex;
     align-items: center;
     color: white;
-    margin-left: 10%;
+    margin-left: 8px;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 600;
-    padding: 3% 0;
+    padding: 0 3% 0 3%;
 }
 
 .estrutura-card,
@@ -55,6 +24,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -86,36 +56,56 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px; 
-    color: white; 
+    gap: 10px;
+
+    
 }
 
-.subtitulo {
+.nome-produto {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 400;
+    color: #fff;
 }
 
-.titulo {
+.valor-produto {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: 700;
+    color: #fff;
 }
+
+.data{
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #fff;
+}
+
 
 .local {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
+    color: #fff;
 }
 
-.data {
-    font-family: "Montserrat", sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-}
+@media screen and (max-width: 768px) {
+    .carousel {
+        width: 100%;
 
-@media screen and (min-width: 768px) {
-    .banner {
-        align-items: center;
+        .card,
+        .card-notebook {
+            width: calc(50% - 20px);
+        }
     }
 }
+
+@media screen and (max-width: 480px) {
+
+    .card,
+    .card-notebook {
+        width: calc(100% - 20px);
+    }
+}
+

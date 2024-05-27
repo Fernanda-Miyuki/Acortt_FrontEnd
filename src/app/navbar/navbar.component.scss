@@ -1,5 +1,5 @@
 nav{
-    background: #333!important;
+    background: #1E1E1E;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,14 +122,15 @@ input::placeholder{
     height: 40px;
     border: none;
     font-size: 14px;
-    font-style: normal;
+    font-style: normal; 
+       
 }
 
 .button_entrar:hover{
     background-color: transparent;
     border: 1px solid #00C515;
     a,img{
-        color:#00C515;
+        color:white;
     }
 }
 

@@ -22,10 +22,9 @@ export class ProductComponent implements AfterViewInit {
       this.defaultImageSrc = this.activeImage.nativeElement.src;
     }
 
-    // Attach hover event listeners to product images
+    // Attach click event listeners to product images
     this.productImages.forEach(imageElementRef => {
-      imageElementRef.nativeElement.addEventListener('mouseenter', this.changeImage.bind(this));
-      imageElementRef.nativeElement.addEventListener('mouseleave', this.resetImage.bind(this));
+      imageElementRef.nativeElement.addEventListener('click', this.changeImage.bind(this));
     });
 
     // Attach click event listener to navigation item

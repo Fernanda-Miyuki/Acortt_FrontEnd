@@ -5,18 +5,18 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProductComponent } from './product/product.component';
-import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
-import { TelamodalComponent } from './telamodal/telamodal.component';
+import { searchScreenComponent } from './searchScreen/searchScreen.component';
+import { modalScreenComponent } from './modalScreen/modalScreen.component.spec';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home' , pathMatch: 'full'},
-  { path: 'home', component:  HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'register', component:  RegisterComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'product', component: ProductComponent },
-  { path: 'telapesquisa', component: TelapesquisaComponent},
-  { path: 'telamodal', component: TelamodalComponent}
+  { path: 'telapesquisa', component: searchScreenComponent },
+  { path: 'telamodal', component: modalScreenComponent }
 ];
 
 @NgModule({

@@ -187,11 +187,11 @@ img {
 
 .product-image img {
   
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .product-image img.fade-out {
-  opacity: 0;
+  opacity: 0.05;
 }
 
 

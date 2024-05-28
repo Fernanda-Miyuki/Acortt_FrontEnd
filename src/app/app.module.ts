@@ -12,8 +12,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarlogComponent } from './navbarlog/navbarlog.component';
 import { ProductComponent } from './product/product.component';
-import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
-import { TelamodalComponent } from './telamodal/telamodal.component';
+import { searchScreenComponent } from './searchScreen/searchScreen.component';
+import { modalScreenComponent } from './modalScreen/modalScreen.component.spec';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './slider/slider.component';
 import { CardsliderComponent } from './cardslider/cardslider.component';
@@ -31,13 +31,13 @@ import { SlidercardComponent } from './slidercard/slidercard.component';
     NavbarComponent,
     NavbarlogComponent,
     ProductComponent,
-    TelapesquisaComponent,
+    searchScreenComponent,
     NavbarlogComponent,
-    TelamodalComponent,
+    modalScreenComponent,
     SliderComponent,
     CardsliderComponent,
     SlidercardComponent
-    
+
   ],
   imports: [
     BrowserModule,

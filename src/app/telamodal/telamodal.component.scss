@@ -27,11 +27,22 @@
 }
  /* Estilos novos */
 
+
+.group-nome{
+    display: flex;
+    margin-bottom: 3%;
+}
+
  .modal-body{
    display: flex;
    flex-direction: column;
    margin: 0 10% 0 10%;
  }
+
+.nome{
+    width: 70%;
+    margin-right: 3%;
+}
 
 .input-nome{
     display: flex;
@@ -44,8 +55,8 @@
     height: 40px;
     border-radius: 8px;
     transition: border-color 0.3s;
-    margin-bottom: 3%;
     padding: 10px;
+    margin: 0;
 }
 
 .input-nome::placeholder{
@@ -54,6 +65,32 @@
 }
 
 .input-nome:focus{
+    border-color: #36912a;
+    outline: none;
+}
+
+.input-marca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a3a3a;
+    color:#f1f1f1;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    padding: 10px;
+    margin: 0;
+}
+
+
+.input-marca::placeholder{
+    color:#adadad;
+    font-size: 14px;
+}
+
+.input-marca:focus{
     border-color: #36912a;
     outline: none;
 }
@@ -124,29 +161,20 @@
     margin-top: 3%;
 }
 
-.imagem-input{
-    background-color: #3a3a3a;
-    color:#adadad;
-    border: none;
-    display: none;
-    width: 100%;
-    height: 250px;
-    border-radius: 8px;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-}
-
-.imagem-produto {
-    background-color: #3a3a3a;
+.input{
+    display: flex;
+    background-color:  #3a3a3a;
     color:#adadad;
     border: none;
     display: flex;
     width: 100%;
-    height: 250px;
+    height: 160px;
     border-radius: 8px;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
+
 }
+
 
 
 .maior-direita{
@@ -160,7 +188,7 @@
     color:#f1f1f1;
     border: 2px solid transparent;
     width: 100%;
-    height: 340px;
+    height: 250px;
     border-radius: 8px;
     transition: border-color 0.3s;
     padding: 10px;
@@ -178,7 +206,7 @@
     outline: none;
 }
 
-.h3_nome, .h3_categoria, .h3_valor, .h3_imagem, .h3_descrição{
+.h3_nome, .h3_categoria, .h3_valor, .h3_imagem, .h3_descrição, .h3_marca{
     color:#f1f1f1;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
@@ -276,21 +304,5 @@
   transform: translateY(0);
 }
 
-
-.file-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-.file-name {
-    margin-right: 10px;
-}
-
-.remove-file {
-    cursor: pointer;
-    color: red;
-    font-size: 1.2em;
-}
 
 

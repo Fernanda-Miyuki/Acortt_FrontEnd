@@ -1,14 +1,22 @@
-<form (ngSubmit)="onSubmit()" class="main-conteudo">
+<form class="main-conteudo">
   <div class="titulo-modal">
     <img class="info" src="./assets/info (1).svg" alt="">
     <h2 class="informacoes">Informações Gerais</h2>
   </div>
   <div class="modal-body">
     <div class="group-nome">
-      <label for="nome-produto">
-        <h3 class="h3_nome">Nome do Produto</h3>
-      </label>
-      <input class="input-nome" placeholder="Escreva detalhadamente o nome do produto" type="text" required [(ngModel)]="nomeProduto" name="nomeProduto" />
+      <div class="nome">
+        <label for="nome-produto">
+          <h3 class="h3_nome">Nome do Produto</h3>
+        </label>
+        <input class="input-nome" placeholder="Escreva detalhadamente o nome do produto" type="text" required>
+      </div>
+      <div class="marca">
+        <label for="marca-produto">
+          <h3 class="h3_marca">Marca</h3>
+        </label>
+        <input class="input-marca" placeholder="Marca do produto" type="text" required>
+      </div>
     </div>
     <div class="group-maior">
       <div class="maior-esquerda">
@@ -17,7 +25,7 @@
             <label for="categoria-produto">
               <h3 class="h3_categoria">Categoria</h3>
             </label>
-            <select class="select-categoria" [(ngModel)]="categoriaProduto" name="categoriaProduto">
+            <select class="select-categoria">
               <option value="">Selecione a categoria</option>
               <option value="1">Acessórios</option>
               <option value="2">Celulares</option>
@@ -29,26 +37,26 @@
             <label for="valor-produto">
               <h3 class="h3_valor">Valor</h3>
             </label>
-            <input class="valor-input" placeholder=" Adicione o valor da venda" type="text" required [(ngModel)]="valorProduto" name="valorProduto" />
+            <input class="valor-input" placeholder=" Adicione o valor da venda" type="text" required> 
           </div>
         </div>
         <div class="inferior-esquerda">
           <label for="imagem-produto">
             <h3 class="h3_imagem">Imagens do Produto</h3>
           </label>
-          <input class="imagem-input" id="imagem-produto" name="imagem-produto" type="file" multiple>
+          <input class="input" type="file" multiple>
         </div>
       </div>
       <div class="maior-direita">
         <label for="descricao-produto">
           <h3 class="h3_descrição">Descrição do Produto</h3>
         </label>
-        <textarea class="descricao-input" rows="3" cols="40" placeholder="Descreva o seu produto para um melhor anuncio" [(ngModel)]="descricaoProduto" name="descricaoProduto"></textarea>
+        <textarea class="descricao-input" rows="3" cols="40" placeholder="Descreva o seu produto para um melhor anuncio" required></textarea>
       </div>
     </div>
     <div class="grupo-button">
-      <div class="button-cancelar" (click)="closeModal()">
-        <button class="cancelar" type="button">
+      <div class="button-cancelar">
+        <button class="cancelar" type="button" (click)="closeModal()">
           <h3 class="h3_cancelar">Cancelar</h3>
         </button>
       </div>

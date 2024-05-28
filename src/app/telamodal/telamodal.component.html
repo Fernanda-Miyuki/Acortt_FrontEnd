@@ -1,70 +1,63 @@
-<div class="main-conteudo">
-    <div class="titulo-modal">
-      <img class="info" src="./assets/info (1).svg" alt="">
-      <h2 class="informacoes">Informações Gerais</h2>
+<form (ngSubmit)="onSubmit()" class="main-conteudo">
+  <div class="titulo-modal">
+    <img class="info" src="./assets/info (1).svg" alt="">
+    <h2 class="informacoes">Informações Gerais</h2>
+  </div>
+  <div class="modal-body">
+    <div class="group-nome">
+      <label for="nome-produto">
+        <h3 class="h3_nome">Nome do Produto</h3>
+      </label>
+      <input class="input-nome" placeholder="Escreva detalhadamente o nome do produto" type="text" required [(ngModel)]="nomeProduto" name="nomeProduto" />
     </div>
-    <div class="modal-body">
-      <div class="group-nome">
-        <label for="nome-produto">
-          <h3 class="h3_nome">Nome do Produto</h3>
-        </label>
-        <input class="input-nome" placeholder="Escreva detalhadamente o nome do produto" type="text" required />
-      </div>
-      <div class="group-maior">
-        <div class="maior-esquerda">
-          <div class="superior-esquerda">
-            <div class="esquerda">
-              <label for="categoria-produto">
-                <h3 class="h3_categoria">Categoria</h3>
-              </label>
-              <select class="select-categoria">
-                <option value="">Selecione a categoria</option>
-                <option value="1">Acessórios</option>
-                <option value="2">Celulares</option>
-                <option value="3">Componentes</option>
-                <option value="4">Notebooks</option>
-              </select>
-            </div>
-            <div class="direita">
-              <label for="valor-produto">
-                <h3 class="h3_valor">Valor</h3>
-              </label>
-              <input class="valor-input" placeholder=" Adicione o valor da venda" type="text" required />
-            </div>
-          </div>
-          <div class="inferior-esquerda">
-            <label>
-              <h3 class="h3_imagem">Imagens do Produto</h3>
+    <div class="group-maior">
+      <div class="maior-esquerda">
+        <div class="superior-esquerda">
+          <div class="esquerda">
+            <label for="categoria-produto">
+              <h3 class="h3_categoria">Categoria</h3>
             </label>
-            <input class="imagem-input" id="imagem-produto" type="file" multiple #imagemInput (change)="onFileSelect($event)">
-            <div id="file-list">
-              <div *ngFor="let file of fileList; let i = index" class="file-item">
-                <span class="file-name">{{ file.name }}</span>
-                <span class="remove-file" (click)="removeFile(i)">&times;</span>
-              </div>
-            </div>
+            <select class="select-categoria" [(ngModel)]="categoriaProduto" name="categoriaProduto">
+              <option value="">Selecione a categoria</option>
+              <option value="1">Acessórios</option>
+              <option value="2">Celulares</option>
+              <option value="3">Componentes</option>
+              <option value="4">Notebooks</option>
+            </select>
+          </div>
+          <div class="direita">
+            <label for="valor-produto">
+              <h3 class="h3_valor">Valor</h3>
+            </label>
+            <input class="valor-input" placeholder=" Adicione o valor da venda" type="text" required [(ngModel)]="valorProduto" name="valorProduto" />
           </div>
         </div>
-        <div class="maior-direita">
-          <label for="descricao-produto">
-            <h3 class="h3_descrição">Descrição do Produto</h3>
+        <div class="inferior-esquerda">
+          <label for="imagem-produto">
+            <h3 class="h3_imagem">Imagens do Produto</h3>
           </label>
-          <textarea class="descricao-input" placeholder="Descreva o seu produto para um melhor anuncio"></textarea>
+          <input class="imagem-input" id="imagem-produto" name="imagem-produto" type="file" multiple>
         </div>
       </div>
-      <div class="grupo-button">
-        <div class="button-cancelar" (click)="closeModal()">
-          <button class="cancelar" type="button">
-            <h3 class="h3_cancelar">Cancelar</h3>
-          </button>
-        </div>
-        <div class="button-publicar">
-          <button class="publicar" type="submit" role="button">
-            <img class="logo" src="./assets/T 10 (4).svg">
-            <h3 class="h3_publicar">Publicar</h3>
-          </button>
-        </div>
+      <div class="maior-direita">
+        <label for="descricao-produto">
+          <h3 class="h3_descrição">Descrição do Produto</h3>
+        </label>
+        <textarea class="descricao-input" rows="3" cols="40" placeholder="Descreva o seu produto para um melhor anuncio" [(ngModel)]="descricaoProduto" name="descricaoProduto"></textarea>
+      </div>
+    </div>
+    <div class="grupo-button">
+      <div class="button-cancelar" (click)="closeModal()">
+        <button class="cancelar" type="button">
+          <h3 class="h3_cancelar">Cancelar</h3>
+        </button>
+      </div>
+      <div class="button-publicar">
+        <button class="publicar" type="submit">
+          <img class="logo" src="./assets/T 10 (4).svg">
+          <h3 class="h3_publicar">Publicar</h3>
+        </button>
       </div>
     </div>
   </div>
-  
+</form>

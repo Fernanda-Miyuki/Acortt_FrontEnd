@@ -1,5 +1,5 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-telamodal',
@@ -7,33 +7,35 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./telamodal.component.scss']
 })
 export class TelamodalComponent {
-  @ViewChild('imagemInput', { static: false }) imagemInput!: ElementRef<HTMLInputElement>; // ViewChild para acessar o input de imagem
+  nomeProduto: string = '';
+  categoriaProduto: string = '';
+  valorProduto: string = '';
+  descricaoProduto: string = '';
+  fileList: File[] = [];
 
-  fileList: File[] = []; // Lista de arquivos
-
-  constructor(private modalService: NgbModal) {}
-
-  closeModal(): void {
-    this.modalService.dismissAll();
-  }
-
-  onFileSelect(event: Event): void {
-    const input = this.imagemInput.nativeElement;
-    this.fileList = [];
-    const files = (event.target as HTMLInputElement).files;
-    if (files) {
-      for (let i = 0; i < files.length; i++) {
-        this.fileList.push(files[i]);
-      }
+  onFileSelect(event: any) {
+    const files = event.target.files;
+    for (let i = 0; i < files.length; i++) {
+      this.fileList.push(files[i]);
     }
   }
 
-  removeFile(index: number): void {
+  removeFile(index: number) {
     this.fileList.splice(index, 1);
+  }
 
-    // Atualizar o input de arquivos para refletir a remoção
-    const dataTransfer = new DataTransfer();
-    this.fileList.forEach(file => dataTransfer.items.add(file));
-    this.imagemInput.nativeElement.files = dataTransfer.files;
+  onSubmit() {
+    // Coleta os dados do formulário:
+    console.log('Nome do Produto:', this.nomeProduto);
+    console.log('Categoria:', this.categoriaProduto);
+    console.log('Valor:', this.valorProduto);
+    console.log('Descrição:', this.descricaoProduto);
+    console.log('Arquivos:', this.fileList);
+
+    // Faça o que você precisa com os dados, como enviá-los para um servidor.
+  }
+
+  closeModal() {
+    // Implemente a lógica para fechar o modal.
   }
 }

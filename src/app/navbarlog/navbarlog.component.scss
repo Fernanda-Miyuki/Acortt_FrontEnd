@@ -1,12 +1,13 @@
 nav{
-    background: #1E1E1E;
+    background: #333333;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0 10px 0;
+    height: 20px;
+    padding: 40px 0;   
 }
 
-.navbar-brand{
+.acortt{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,10 +16,9 @@ nav{
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    margin-right: 49%;
 }
 
-.nav-link.active, .nav-link{
+a{
     text-decoration: none;
     color: white;
     font-weight: 500;
@@ -34,13 +34,25 @@ a:hover{
 .logo{
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-left: 10%;
-    margin-right: 10px;
+    gap:20px;
+}
+
+.content-direito{
+    display: flex;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.nav-profile{
+.user{
+    padding-right: 50px;
+}
+
+
+
+.sair{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +73,7 @@ a:hover{
    align-items: center; 
 }
 
-.nav-sair{
+.user{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,4 +84,24 @@ a:hover{
     justify-content: center;
     padding-right: 5px;
     align-items: center; 
+}
+
+@media only screen and (max-width: 740px) {
+   .logo{
+    margin-left: 0;
+    gap:5px;
+   }
+
+   .sair{
+    padding-right: 30px;
+   }
+   
+   .content-direito{
+    margin-right: 0;
+   }
+   .user{
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+
 }

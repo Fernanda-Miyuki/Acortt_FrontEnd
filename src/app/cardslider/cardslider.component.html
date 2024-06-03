@@ -4,18 +4,20 @@
     <ngx-slick-carousel class="carousel-items" [config]="slickCarouselConfig">
         <div ngxSlickItem class="product-card" *ngFor="let produto of lista">
             <!-- <div class="badge">Acc</div> -->
-            <div class="product-tumb">
-                <img class="img-smartphone" src="{{produto.urlImage}}" alt="image">
-            </div>
-            <div class="product-details">
-                <span class="product-catagory">Celulares</span>
-                <h4><a href="#">{{produto.titulo}}</a></h4>
-                <p>{{produto.local}}</p>
-                <p>{{produto.data}}</p>
-                <div class="product-bottom-details">
-                    <div class="product-price">{{produto.subtitulo}}</div>
+            <a href="">
+                <div class="product-tumb">
+                    <img class="img-smartphone" src="{{produto.urlImage}}" alt="image">
                 </div>
-            </div>
+                <div class="product-details">
+                    <span class="product-catagory">Celulares</span>
+                    <h4><a href="#">{{produto.titulo}}</a></h4>
+                    <p>{{produto.local}}</p>
+                    <p>{{produto.data}}</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price">{{produto.subtitulo}}</div>
+                    </div>
+                </div>
+            </a>
         </div>
     </ngx-slick-carousel>
 
@@ -23,18 +25,20 @@
     <ngx-slick-carousel class="carousel-items" [config]="slickCarouselConfig">
         <div ngxSlickItem class="product-card" *ngFor="let produto of produtos">
             <!-- <div class="badge">Acc</div> -->
-            <div class="product-tumb">
-                <img class="img-banner" src="{{produto.urlImage}}" alt="hghg">
-            </div>
-            <div class="product-details">
-                <span class="product-catagory">Notebooks</span>
-                <h4><a href="#">{{produto.titulo}}</a></h4>
-                <p>{{produto.local}}</p>
-                <p>{{produto.data}}</p>
-                <div class="product-bottom-details">
-                    <div class="product-price">{{produto.subtitulo}}</div>
+            <a href="">
+                <div class="product-tumb">
+                    <img class="img-banner" src="{{produto.urlImage}}" alt="hghg">
                 </div>
-            </div>
+                <div class="product-details">
+                    <span class="product-catagory">Notebooks</span>
+                    <h4><a href="#">{{produto.titulo}}</a></h4>
+                    <p>{{produto.local}}</p>
+                    <p>{{produto.data}}</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price">{{produto.subtitulo}}</div>
+                    </div>
+                </div>
+            </a>
         </div>
     </ngx-slick-carousel>
 </div>

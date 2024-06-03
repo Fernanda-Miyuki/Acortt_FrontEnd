@@ -60,3 +60,4 @@ export class ProductComponent implements AfterViewInit {
     }
   }
 }
+

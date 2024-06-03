@@ -12,42 +12,42 @@ export class CardsliderComponent implements AfterViewInit {
   lista: any[] = [
      {
       urlImage: '/assets/anh-nhat-PdALQmfEqvE-unsplash.jpg',
-      titulo: 'Placa mãe',
+      titulo: 'Titulo 1',
       subtitulo: 'R$ 5000,00',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',
     },
     {
       urlImage: '/assets/simerpreet-singh-OOVomt_6wEY-unsplash.jpg',
-      titulo: 'Celular A20',
+      titulo: 'Titulo 1',
       subtitulo: 'R$ 1000,00',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',
     },
     {
       urlImage: '/assets/anh-nhat-PdALQmfEqvE-unsplash.jpg',
-      titulo: 'Placa mãe',
+      titulo: 'Titulo 1',
       subtitulo: 'R$ 5000,00',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',
     },
     {
       urlImage: '/assets/simerpreet-singh-OOVomt_6wEY-unsplash.jpg',
-      titulo: 'Celular A20',
+      titulo: 'Titulo 1',
       subtitulo: 'R$ 1000,00',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',
     },
     {
       urlImage: '/assets/anh-nhat-PdALQmfEqvE-unsplash.jpg',
-      titulo: 'Placa mãe',
+      titulo: 'Titulo 1',
       subtitulo: 'R$ 5000,00',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',
     },
     {
       urlImage: '/assets/simerpreet-singh-OOVomt_6wEY-unsplash.jpg',
-      titulo: 'Celular A20',
+      titulo: 'Titulo 1',
       subtitulo: 'R$ 1000,00',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',
@@ -57,7 +57,7 @@ export class CardsliderComponent implements AfterViewInit {
   produtos: any[] = [
     {
       urlImage: 'https://images.unsplash.com/photo-1659135890064-d57187f0946c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fG5vdGVib29rJTIwYXBwbGV8ZW58MHx8MHx8fDA%3D',
-      titulo: 'Samsung Notebook ',
+      titulo: 'Samsung Book A360',
       subtitulo: 'R$ 3000,00',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',

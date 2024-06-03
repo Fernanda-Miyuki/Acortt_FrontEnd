@@ -11,7 +11,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarlogComponent } from './navbarlog/navbarlog.component';
-import { ProductComponent } from './product/product.component';
+import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
+import { TelamodalComponent } from './telamodal/telamodal.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SliderComponent } from './slider/slider.component';
+import { CardsliderComponent } from './cardslider/cardslider.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
+
 
 @NgModule({
   declarations: [
@@ -21,18 +28,24 @@ import { ProductComponent } from './product/product.component';
     RegisterComponent,
     ProfileComponent,
     NavbarComponent,
+    TelapesquisaComponent,
     NavbarlogComponent,
-    ProductComponent,
+    TelamodalComponent,
+    SliderComponent,
+    CardsliderComponent,
+    SlickCarouselModule,
+    NavbarlogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    FormsModule,
+    HttpClientModule,
+    NgbModule,
+    SlickCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { }

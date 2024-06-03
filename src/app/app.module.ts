@@ -6,19 +6,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarlogComponent } from './navbarlog/navbarlog.component';
-import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
-import { TelamodalComponent } from './telamodal/telamodal.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SliderComponent } from './slider/slider.component';
-import { CardsliderComponent } from './cardslider/cardslider.component';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
-
-
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -28,21 +21,16 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     RegisterComponent,
     ProfileComponent,
     NavbarComponent,
-    TelapesquisaComponent,
     NavbarlogComponent,
-    TelamodalComponent,
-    SliderComponent,
-    CardsliderComponent,
-    
-    
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
-    NgbModule,
-    SlickCarouselModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

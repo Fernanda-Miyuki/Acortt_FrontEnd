@@ -37,40 +37,40 @@ nav {
 .logo {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    width: 370px;
-    
+    margin: 0 10px -30px 0;
+    padding-left: 10%;
 }
 
-.input {
+.acortt{
+    display: flex;
+    align-items: center;
+}
+
+
+.input{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 10px 0 20px;
+    gap:10px;
+
+}
     
-
-}
-
-.link {
-    display: flex;
-    width: 260px;
-    margin-right: 110px;
-    justify-content: space-between;
-}
-
-.search {
-    width: 300px;
+.search{ 
+    width: 350px;
     height: 30px;
     border-radius: 5px;;
     background-color: white;
     border: 2px solid #00C515;
 }
 
-input::placeholder {
+
+input::placeholder{
     color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-
-.nav-link {
+.nav-link{
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -101,8 +101,14 @@ a {
     margin-right: px;
 }
 
-.criar_conta:hover {
-    box-shadow: 0 0 4px 3px #00C515;
+.criar_conta:hover{
+    background-color: #00C515;
+    transition: 0.5s;
+    transform: ease-in-out;
+    a{
+        color:black;
+    }
+    
 }
 
 a {
@@ -126,16 +132,10 @@ a {
 .entrar:hover {
     background-color: transparent;
     border: 1px solid #00C515;
-
-    a,
-    img {
-        color: white;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .search{
-        
+    transition: 0.5s;
+    transform: ease-in-out;
+    a,img{
+        color:#00C515;
     }
 }
 

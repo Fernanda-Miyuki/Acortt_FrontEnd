@@ -26,7 +26,7 @@ nav {
     align-items: center;
     justify-content: center;
     width: 50px;
-    height: 33px;
+    height: 30px;
     border-radius: 5px;
     background-color: #00C515;
     border: none;
@@ -38,33 +38,29 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    width: 160px;
-    //margin-left: 3rem;
+    width: 370px;
+    
 }
 
 .input {
     display: flex;
     align-items: center;
     justify-content: center;
-    //margin: 0 10px 0 20px;
-    gap: 10px;
+    
 
 }
 
 .link {
     display: flex;
-    //justify-content: center;
-    //padding-right: 10%;
     width: 260px;
+    margin-right: 110px;
     justify-content: space-between;
-    //gap: 80px;
 }
 
 .search {
     width: 300px;
     height: 30px;
-    border-radius: 5px;
-    border: 1px solid;
+    border-radius: 5px;;
     background-color: white;
     border: 2px solid #00C515;
 }
@@ -102,6 +98,7 @@ a {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
+    margin-right: px;
 }
 
 .criar_conta:hover {
@@ -133,6 +130,12 @@ a {
     a,
     img {
         color: white;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .search{
+        
     }
 }
 

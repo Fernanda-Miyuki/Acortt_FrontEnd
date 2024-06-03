@@ -1,5 +1,5 @@
 nav{
-    background: #1E1E1E;
+    background: #333333;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +91,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 50px;
 }   
 
 .name{
@@ -111,4 +111,29 @@ a:hover{
     justify-content: center;
     padding-right: 5px;
     align-items: center; 
+}
+
+@media only screen and (max-width: 770px) {
+   .logo{
+    margin-left: 20px;
+    gap:5px;
+   }
+
+   .sair{
+    padding-right: 20px;
+   }
+
+   .home{
+    padding-right: 20px;
+   }
+
+   .content-direito{
+    margin-right: 0;
+   }
+
+   .user{
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+
 }

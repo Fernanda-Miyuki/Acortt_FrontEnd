@@ -37,6 +37,30 @@ a {
 
 .title {
     font-size: 1.5rem;
+}
+
+.welcome{
+    font-family: Roboto Slab, sans-serif;
+    font-weight: 500;
+    color: rgba(0, 197, 21, 1);
+}
+
+h1,h4{
+    margin-top: 0;
+}
+
+
+h4{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: rgba(136, 134, 133, 1);
+}
+
+.input, .title{
+    margin-bottom: 50px;
+}
+
+.input{
     display: flex;
     flex-direction: column;
     align-items: center;

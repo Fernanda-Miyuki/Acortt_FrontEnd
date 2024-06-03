@@ -1,4 +1,4 @@
-<form class="main-conteudo">
+<form (ngSubmit)="submitProduct()" [formGroup]="mainForm" class="main-conteudo">
   <div class="titulo-modal">
     <img class="info" src="./assets/info (1).svg" alt="">
     <h2 class="informacoes">Informações Gerais</h2>
@@ -9,13 +9,13 @@
         <label for="nome-produto">
           <h3 class="h3_nome">Nome do Produto</h3>
         </label>
-        <input class="input-nome" placeholder="Escreva detalhadamente o nome do produto" type="text" required>
+        <input class="input-nome" placeholder="Escreva detalhadamente o nome do produto" type="text" formControlName="nomeProduto" required>
       </div>
       <div class="marca">
         <label for="marca-produto">
           <h3 class="h3_marca">Marca</h3>
         </label>
-        <input class="input-marca" placeholder="Marca do produto" type="text" required>
+        <input class="input-marca" placeholder="Marca do produto" type="text" formControlName="marcaProduto" required>
       </div>
     </div>
     <div class="group-maior">
@@ -25,7 +25,7 @@
             <label for="categoria-produto">
               <h3 class="h3_categoria">Categoria</h3>
             </label>
-            <select class="select-categoria">
+            <select class="select-categoria" formControlName="categoriaProduto">
               <option value="">Selecione a categoria</option>
               <option value="1">Acessórios</option>
               <option value="2">Celulares</option>
@@ -37,22 +37,22 @@
             <label for="valor-produto">
               <h3 class="h3_valor">Valor</h3>
             </label>
-            <input class="valor-input" placeholder=" Adicione o valor da venda" type="text" required> 
+            <input class="valor-input" placeholder=" Adicione o valor da venda" type="text" formControlName="valorProduto" required> 
           </div>
         </div>
         <div class="inferior-esquerda">
           <label for="imagem-produto">
             <h3 class="h3_imagem">Imagens do Produto</h3>
           </label>
-          <input class="input" type="file" id="file" multiple>
-          <!-- <label class="label-image" for="file">Upload File</label> -->
+          <input class="input" type="file" id="fileInput" multiple (change)="onFileSelected($event)"/>
+          <label class="label-image" for="fileInput">Upload Image</label>
         </div>
       </div>
       <div class="maior-direita">
         <label for="descricao-produto">
           <h3 class="h3_descrição">Descrição do Produto</h3>
         </label>
-        <textarea class="descricao-input" rows="3" cols="40" placeholder="Descreva o seu produto para um melhor anuncio" required></textarea>
+        <textarea class="descricao-input" rows="3" cols="40" placeholder="Descreva em detalhes o seu produto para um melhor anúncio (ex: condição da bateria, memória, etc.)" formControlName="descricaoProduto" required></textarea>
       </div>
     </div>
     <div class="grupo-button">

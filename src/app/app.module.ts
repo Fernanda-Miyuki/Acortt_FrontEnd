@@ -12,13 +12,12 @@ import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarlogComponent } from './navbarlog/navbarlog.component';
 import { ProductComponent } from './product/product.component';
-import { searchScreenComponent } from './searchScreen/searchScreen.component';
 import { modalScreenComponent } from './modalScreen/modalScreen.component.spec';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './slider/slider.component';
 import { CardsliderComponent } from './cardslider/cardslider.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-
+import { telapesquisaComponent } from './telapesquisa/telapesquisa.component';
 
 
 @NgModule({
@@ -31,7 +30,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     NavbarComponent,
     NavbarlogComponent,
     ProductComponent,
-    searchScreenComponent,
+    telapesquisaComponent,
     NavbarlogComponent,
     modalScreenComponent,
     SliderComponent,

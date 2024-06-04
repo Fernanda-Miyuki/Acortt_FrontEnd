@@ -4,13 +4,13 @@
     background: #1E1E1E;
 }
 
-a{
+.nav-list{
     text-decoration: none;
     color:white;
     font-weight: 500;
 }
 
-a:hover{
+.nav-list:hover {
     color: #00C515;
     transition: ease 1s;
 }
@@ -83,4 +83,5 @@ a.support{
     margin-left:10px ;
     font-weight: 600;
     color: black;
+    text-decoration: none;
 }

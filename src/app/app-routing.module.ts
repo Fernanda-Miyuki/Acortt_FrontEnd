@@ -6,7 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProductComponent } from './product/product.component';
-import { searchScreenComponent } from './searchScreen/searchScreen.component';
+import { telapesquisaComponent } from './telapesquisa/telapesquisa.component';
 import { modalScreenComponent } from './modalScreen/modalScreen.component.spec';
 
 const routes: Routes = [
@@ -16,8 +16,8 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'product', component: ProductComponent },
-  { path: 'telapesquisa', component: searchScreenComponent },
-  { path: 'telamodal', component: modalScreenComponent }
+  { path: 'telapesquisa', component: telapesquisaComponent },
+  { path: 'modalscreen', component: modalScreenComponent }
 ];
 
 @NgModule({

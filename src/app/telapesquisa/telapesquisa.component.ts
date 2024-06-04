@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-searchScreen',
-  templateUrl: './searchScreen.component.html',
-  styleUrls: ['./searchScreen.component.scss']
+  selector: 'app-telapesquisa',
+  templateUrl: './telapesquisa.component.html',
+  styleUrls: ['./telapesquisa.component.scss']
 })
-export class searchScreenComponent {
+export class telapesquisaComponent {
   constructor(private router: Router) {
 
   }

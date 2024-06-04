@@ -1,17 +1,24 @@
-import { Component } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TelamodalComponent } from './telamodal.component';
 
-@Component({
-  selector: 'app-telamodal',
-  templateUrl: './telamodal.component.html',
-  styleUrls: ['./telamodal.component.scss']
-})
-export class telamodalComponent {
-  constructor(
-    private modalService: NgbModal
-  ) {}
+describe('TelamodalComponent', () => {
+  let component: TelamodalComponent;
+  let fixture: ComponentFixture<TelamodalComponent>;
 
-  closeModal():void {
-    this.modalService.dismissAll();
-  }
-}
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [TelamodalComponent]
+    })
+      .compileComponents();
+  });
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(TelamodalComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

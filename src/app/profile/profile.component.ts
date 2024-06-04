@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { modalScreenComponent } from '../telamodal/telamodal.component.spec';
+import { TelamodalComponent } from '../telamodal/telamodal.component';
 
 @Component({
   selector: 'app-profile',
@@ -67,6 +67,6 @@ export class ProfileComponent {
   ];
 
   openModal(): void {
-    this.modalService.open(modalScreenComponent, { size: 'xl' });
+    this.modalService.open(TelamodalComponent, { size: 'xl' });
   }
 } 

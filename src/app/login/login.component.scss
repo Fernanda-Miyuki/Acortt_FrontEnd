@@ -57,7 +57,7 @@ h4{
 }
 
 .input, .title{
-    margin-bottom: 50px;
+    margin-bottom:8px;
 }
 
 .input{
@@ -86,10 +86,10 @@ h4{
 .forgot{
     font-family: $font-family_1;
     font-weight: 400;
-    margin-top: 7px;
+    font-size: medium;
     text-decoration: none;
-    display: flex;
-    justify-content:end;
+    margin-left: 20%;
+    margin-bottom: -2%;
 }
 
 .form{
@@ -103,6 +103,7 @@ h4{
 .account{
     display: flex;
     justify-content: space-evenly;
+    gap: 15px;
 }
 
 .account .accountTxt{
@@ -149,11 +150,11 @@ h4{
     color: $color_2;
     border: none;
     border-radius: 7.5px;
-    width: 100%;
+    width: 46%;
     padding: 8px 0 8px 15px;
     font-size: 15px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 20px;
     cursor: pointer;
 }
 

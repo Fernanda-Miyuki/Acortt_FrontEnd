@@ -12,12 +12,12 @@ import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarlogComponent } from './navbarlog/navbarlog.component';
 import { ProductComponent } from './product/product.component';
-import { telamodalComponent } from './telamodal/telamodal.component.spec';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './slider/slider.component';
 import { CardsliderComponent } from './cardslider/cardslider.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { telapesquisaComponent } from './telapesquisa/telapesquisa.component';
+import { TelamodalComponent } from './telamodal/telamodal.component';
 
 
 @NgModule({
@@ -32,9 +32,9 @@ import { telapesquisaComponent } from './telapesquisa/telapesquisa.component';
     ProductComponent,
     telapesquisaComponent,
     NavbarlogComponent,
-    telamodalComponent,
     SliderComponent,
     CardsliderComponent,
+    TelamodalComponent
   ],
   imports: [
     BrowserModule,

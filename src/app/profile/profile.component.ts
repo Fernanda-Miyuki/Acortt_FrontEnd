@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { modalScreenComponent } from '../modalScreen/modalScreen.component.spec';
+import { modalScreenComponent } from '../telamodal/telamodal.component.spec';
 
 @Component({
   selector: 'app-profile',

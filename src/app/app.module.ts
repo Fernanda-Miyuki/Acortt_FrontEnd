@@ -12,7 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarlogComponent } from './navbarlog/navbarlog.component';
 import { ProductComponent } from './product/product.component';
-import { modalScreenComponent } from './modalScreen/modalScreen.component.spec';
+import { telamodalComponent } from './telamodal/telamodal.component.spec';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './slider/slider.component';
 import { CardsliderComponent } from './cardslider/cardslider.component';
@@ -32,7 +32,7 @@ import { telapesquisaComponent } from './telapesquisa/telapesquisa.component';
     ProductComponent,
     telapesquisaComponent,
     NavbarlogComponent,
-    modalScreenComponent,
+    telamodalComponent,
     SliderComponent,
     CardsliderComponent,
   ],

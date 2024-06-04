@@ -5,7 +5,7 @@ import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProductComponent } from './product/product.component';
 import { telapesquisaComponent } from './telapesquisa/telapesquisa.component';
-import { modalScreenComponent } from './modalScreen/modalScreen.component.spec';
+import { telamodalComponent } from './telamodal/telamodal.component.spec';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -15,5 +15,5 @@ export const routes: Routes = [
     { path: 'profile', component: ProfileComponent },
     { path: 'product', component: ProductComponent },
     { path: 'telapesquisa', component: telapesquisaComponent },
-    { path: 'modalscreen', component: modalScreenComponent }
+    { path: 'telamodal', component: telamodalComponent }
 ];

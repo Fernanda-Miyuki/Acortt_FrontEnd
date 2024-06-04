@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-modalScreen',
-  templateUrl: './modalScreen.component.html',
-  styleUrls: ['./modalScreen.component.scss']
+  selector: 'app-telamodal',
+  templateUrl: './telamodal.component.html',
+  styleUrls: ['./telamodal.component.scss']
 })
-export class modalScreenComponent {
+export class telamodalComponent {
   constructor(
     private modalService: NgbModal
   ) {}

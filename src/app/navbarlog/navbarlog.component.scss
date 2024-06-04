@@ -1,10 +1,13 @@
-nav{
-    background: #333333;
+nav {
+    background: #1E1E1E;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 20px;
-    padding: 40px 0;   
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 2.5rem;
 }
 
 .acortt{
@@ -31,16 +34,18 @@ a:hover{
     color:#00C515;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
-    margin-left: 10%;
-    gap:20px;
+    gap: 20px;
+    width: 160px;
+    margin-left: 8%;
 }
+
 
 .content-direito{
     display: flex;
-    margin-right: 10%;
+    margin-right: 5%;
     justify-content: center;
     align-items: center;
 }

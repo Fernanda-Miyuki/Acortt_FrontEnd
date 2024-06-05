@@ -51,4 +51,8 @@ Para mais informações ou perguntas sobre o projeto, entre em contato com a equ
 
 ---
 
+<<<<<<< HEAD
 Acortt - Facilitando a troca de tecnologia entre universidades.
+=======
+Acortt - Facilitando a troca de tecnologia entre universidades.
+>>>>>>> 4ea82aa4b0ace352bc0fcbfb72adbc645133ba5e

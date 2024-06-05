@@ -1,5 +1,7 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { SlickCarouselComponent } from 'ngx-slick-carousel';
+import { ProductService } from '../services/product.service';
+import { Product } from '../models/product.model';
 
 @Component({
   selector: 'app-cardslider',
@@ -9,7 +11,10 @@ import { SlickCarouselComponent } from 'ngx-slick-carousel';
 export class CardsliderComponent implements AfterViewInit {
   @ViewChild('carousel') carousel!: SlickCarouselComponent; 
 
-  lista: any[] = [
+  constructor(private productService: ProductService) { }
+  public computersList:Product[] = []
+  
+  computerList: any[] = [
      {
       urlImage: '/assets/anh-nhat-PdALQmfEqvE-unsplash.jpg',
       titulo: 'Placa mãe',
@@ -134,10 +139,10 @@ export class CardsliderComponent implements AfterViewInit {
     ]
   };
 
-  constructor() { }
-
   ngAfterViewInit() {
-    console.log(this.carousel);
+    this.productService.getProducts().subscribe((products) => {
+      this.computersList = products
+    })
   }
 
   next() {

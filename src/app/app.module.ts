@@ -16,6 +16,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './slider/slider.component';
 import { CardsliderComponent } from './cardslider/cardslider.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { ProductComponent } from './product/product.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -32,8 +34,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     TelamodalComponent,
     SliderComponent,
     CardsliderComponent,
-    SlickCarouselModule,
-    NavbarlogComponent
+    NavbarlogComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +43,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     ReactiveFormsModule,
     FormsModule,
     NgbModule,
+    HttpClientModule,
     SlickCarouselModule,
   ],
   providers: [],

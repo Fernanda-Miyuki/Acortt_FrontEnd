@@ -16,7 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './slider/slider.component';
 import { CardsliderComponent } from './cardslider/cardslider.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { telapesquisaComponent } from './telapesquisa/telapesquisa.component';
+import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
 import { TelamodalComponent } from './telamodal/telamodal.component';
 
 
@@ -30,7 +30,7 @@ import { TelamodalComponent } from './telamodal/telamodal.component';
     NavbarComponent,
     NavbarlogComponent,
     ProductComponent,
-    telapesquisaComponent,
+    TelapesquisaComponent,
     NavbarlogComponent,
     SliderComponent,
     CardsliderComponent,

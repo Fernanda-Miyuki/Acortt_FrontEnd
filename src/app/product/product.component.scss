@@ -5,10 +5,10 @@ $color_4: #1e1e1e;
 $color_5: #75f481;
 $color_6: #00C515;
 $speed: 1s;
-$font-family_1: "Pontano Sans", sans-serif;
+// $font-family_1: "Pontano Sans", sans-serif;
 
-@import "https://fonts.googleapis.com/css?family=Pontano+Sans";
-@import "https://fonts.googleapis.com/css?family=Lato:700";
+// @import "https://fonts.googleapis.com/css?family=Pontano+Sans";
+// @import "https://fonts.googleapis.com/css?family=Lato:700";
 
 // Efeito Fotos
 @-webkit-keyframes fadeImg {
@@ -32,7 +32,7 @@ $font-family_1: "Pontano Sans", sans-serif;
 
 // Geral
 .body {
-    font-family: $font-family_1;
+    // font-family: $font-family_1;
     font-size: 1.125rem;
     line-height: 1.5;
     margin: 0;

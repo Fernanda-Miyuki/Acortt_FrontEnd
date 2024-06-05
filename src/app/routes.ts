@@ -4,8 +4,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProductComponent } from './product/product.component';
-import { telapesquisaComponent } from './telapesquisa/telapesquisa.component';
-import { telamodalComponent } from './telamodal/telamodal.component.spec';
+import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
+import { TelamodalComponent } from './telamodal/telamodal.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -14,6 +14,6 @@ export const routes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'profile', component: ProfileComponent },
     { path: 'product', component: ProductComponent },
-    { path: 'telapesquisa', component: telapesquisaComponent },
-    { path: 'telamodal', component: telamodalComponent }
+    { path: 'telapesquisa', component: TelapesquisaComponent },
+    { path: 'telamodal', component: TelamodalComponent }
 ];

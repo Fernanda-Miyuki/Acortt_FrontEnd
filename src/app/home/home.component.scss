@@ -73,4 +73,12 @@ footer{
     height: 50px; 
 }
 
-
+@media only screen and (max-width: 650px) {
+    .icons-menu{
+        display: none;
+        
+    }
+    .link_links{
+        gap: 20px;
+    }
+}

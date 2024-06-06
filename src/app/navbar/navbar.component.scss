@@ -35,47 +35,50 @@ nav {
     font-family: "Montserrat", sans-serif;
 }
 
-.search{ 
+.logo {
     display: flex;
     justify-content: center;
+    gap: 20px;
+    width: 370px;
+    
+}
+
+.input {
+    display: flex;
     align-items: center;
-    width: 290px;
+    justify-content: center;
+    
+
+}
+
+.link {
+    display: flex;
+    width: 260px;
+    margin-right: 110px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.search {
+    width: 300px;
     height: 30px;
-    border-radius: 5px 0 0 5px;;
+    border-radius: 5px 0 0 5px;
     background-color: white;
     border: 1px solid #00C515;
 }
 
-.input{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.content-logo{
-    
-    justify-content: center;
-    gap: 20px;
-    margin-left: 8%;
-
-
-}
-
-
-
-input::placeholder{
+input::placeholder {
     color: black;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 
-.link{
+.nav-link {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    margin-right: 8%;
-    gap: 20px;
-}
+    justify-content: space-between;
+    gap: 3rem;
 
+}
 
 a {
     text-decoration: none;
@@ -100,8 +103,8 @@ a {
     margin-right: px;
 }
 
-.criar_conta:hover{
-    box-shadow: #00C515 0px 0px 20px 1px;  
+.criar_conta:hover {
+    box-shadow: 0 0 4px 3px #00C515;
 }
 
 a {
@@ -125,12 +128,13 @@ a {
 .entrar:hover {
     background-color: transparent;
     border: 1px solid #00C515;
-    transition: 0.5s;
-    transform: ease-in-out;
-    a{
-        color:#00C515;
+
+    a,
+    img {
+        color: white;
     }
 }
+
 
 @media only screen and (max-width: 768px) {
     .nav {
@@ -160,7 +164,7 @@ a {
     }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 800px) {
     .nav {
         flex-direction: column;
         align-items: center;
@@ -178,7 +182,10 @@ a {
         margin: 10px; 
     }
     .search {
-        width: calc(100% - 20px); 
+        display: none; 
+    }
+    .botao_pesquisa{
+        display: none;
     }
     .link {
         padding-right: 0;
@@ -186,3 +193,5 @@ a {
         gap: 20px; 
     }
 }
+
+

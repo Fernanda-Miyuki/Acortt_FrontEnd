@@ -1,0 +1,125 @@
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.h2_conteudo {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    padding: 100 5%;
+}
+
+.product-card {
+    height: 350px;
+    position: relative;
+    margin: 5px;
+    background: #161616; 
+    border-radius: 5px;
+    box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.4117647059);
+    padding: 15px;
+    transition: 0.3s;
+}
+
+// .badge {
+//     position: absolute;
+//     left: 0;
+//     top: 10px;
+//     text-transform: uppercase;
+//     font-size: 13px;
+//     font-weight: 700;
+//     background: #00C515;
+//     color: #fff;
+//     padding: 2px 10px;
+// }
+
+.product-tumb {
+    background: #161616;
+    border-radius: 12px;
+}
+
+.product-tumb img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 12px; 
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+.product-catagory {
+    margin-top: 15px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+}
+
+.product-details h4 a {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff; 
+    text-decoration: none;
+    transition: 0.3s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 28px;     /* fallback */
+    max-height: 23x;      /* fallback */
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.product-details h4 a:hover {
+    color: #00C515;
+}
+
+.product-details p {
+    font-size: 14.5px;
+    line-height: 10px;
+    color: #999;
+}
+
+.product-bottom-details {
+    border-top: 1px solid #eee;
+    padding-top: 5px;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        width: 100%;
+    }
+    .product-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-card {
+        width: calc(100% - 20px);
+    }
+}

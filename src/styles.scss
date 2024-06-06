@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    background-color: #1e1e1e;
+}
+
+.cor-fundo{
+    background-color: #1e1e1e;
+}
+
+:root{
+    --main-color: #00C515; ;
+    --bg-color: #1e1e1e;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+.slick-slide{
+    cursor: pointer;
+}

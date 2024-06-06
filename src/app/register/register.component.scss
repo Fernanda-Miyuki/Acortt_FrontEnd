@@ -1,0 +1,200 @@
+$color_1: #00C515;
+$color_2: white;
+$color_3: var(--color);
+$font-family_1: 'Montserrat', sans-serif;
+$font-family_2: 'Roboto', sans-serif;
+$background-color_1: hsl(0, 0%, 12%);
+$background-color_2: #373737;
+$border-color_1: var(--hover);
+
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color_1;
+    top: 10%;
+    left: 37%;
+}
+
+h6 {
+    color: $color_1;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-login{
+    text-decoration: none;
+}
+
+.custom-structure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: $background-color_1;
+    font-family: $font-family_1;
+    color: $color_2;
+    transition: 0.5s;
+}
+
+.custom-container {
+    background-color: $background-color_2;
+    padding: 5px;
+    width: 350px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+form {
+    position: absolute;
+    margin-top: 80px;
+    transition: .5s;
+    width: 300px;
+    height: 400px;
+}
+
+.custom-buttonsForm {
+    margin-top: 30px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 lightgreen;
+
+    button {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        position: relative;
+        padding: 10px 29px;
+    }
+}
+
+.custom-btnColor {
+    position: absolute;
+    width: 140px;
+    height: 100%;
+    background: linear-gradient(to right, #00C515, #105c17);
+    border-radius: 30px;
+    transition: .3s;
+    color: $color_2;
+}
+
+.custom-input-wrapper {
+    --padding: 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.custom-input-wrapper input {
+    padding: var(--padding);
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 6px;
+    width: 100%;
+    background-color: $background-color_1;
+    color: $color_2;
+}
+
+.custom-input-wrapper .custom-placeholder {
+    position: absolute;
+    color: gray;
+    left: var(--padding);
+    padding: 0;
+    transition: all 0.2s ease-in;
+}
+
+.custom-input-wrapper input:is(:focus, :valid) + .custom-placeholder {
+    transform: translatey(calc(-1 * var(--padding) - 12px)) translatex(-8px);
+    font-size: 14px;
+}
+
+.custom-select {
+    border: none;
+    border: 1px solid gray;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 10px 0 10px 20px;
+    outline: none;
+    width: 100%;
+    background-color: $background-color_1;
+    color: gray;
+    font-size: 14px;
+}
+
+.custom-submit {
+    &:hover {
+        background: linear-gradient(to right, #00C515, #105c17);
+    }
+    background: #1E1E1E;
+    color: $color_2;
+    border: none;
+    border-radius: 7.5px;
+    width: 100%;
+    padding: 8px 0 8px 15px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#btnSignin, #btnSignup {
+    color: $color_2;
+    font-weight: 400;
+    font-family: $font-family_2;
+}
+
+.custom-divCheck {
+    margin: 10px 0 0 5px;
+    width: 85%;
+    font-size: 13px;
+}
+
+.custom-span, .custom-checkbox-label {
+    color: $color_1;
+}
+
+.custom-raise {
+    &:hover {
+        box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+        transform: translateY(-0.25em);
+    }
+
+    &:focus {
+        box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+        transform: translateY(-0.25em);
+    }
+
+    --color: #1e1e1e;
+    --hover: #00C515;
+}
+
+button {
+    color: $color_3;
+    transition: 0.25s;
+}
+
+.custom-form-check {
+    color: $color_1;
+}
+
+.links {
+    display: flex;
+    gap: 13px;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}

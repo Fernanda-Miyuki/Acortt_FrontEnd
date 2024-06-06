@@ -143,12 +143,12 @@ a {
         padding: 10px 0;
     }
     .acortt {
-        font-size: 16px;
-        margin-bottom: 10px;
+        font-size: 18px;
+        
     }
     .logo {
-        padding-left: 0;
-        margin-bottom: 10px;
+        padding-left: 0; 
+    }
     }
     .input {
         margin-left: 0;
@@ -162,7 +162,7 @@ a {
         justify-content: space-around;
         gap: 0;
     }
-}
+
 
 @media only screen and (max-width: 800px) {
     .nav {
@@ -172,11 +172,13 @@ a {
     }
     .acortt {
         font-size: 18px;
-        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
     }
     .logo {
         padding-left: 0;
-        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
     }
     .input {
         margin: 10px; 

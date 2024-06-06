@@ -1,0 +1,358 @@
+.main-conteudo{
+    background-color: #242424;
+    border-radius: 5px;
+    border: none;
+}
+
+.titulo-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 30px 0 30px 0;
+}
+
+.informacoes{
+    color: #f1f1f1;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin:0;
+}
+
+
+.info{
+    padding-right: 10px;
+}
+ /* Estilos novos */
+
+
+.group-nome{
+    display: flex;
+    margin-bottom: 3%;
+}
+
+ .modal-body{
+   display: flex;
+   flex-direction: column;
+   margin: 0 10% 0 10%;
+ }
+
+.nome{
+    width: 70%;
+    margin-right: 3%;
+}
+
+.input-nome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a3a3a;
+    color:#f1f1f1;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    padding: 10px;
+    margin: 0;
+}
+
+.input-nome::placeholder{
+    color:#adadad;
+    font-size: 14px;
+}
+
+.input-nome:focus{
+    border-color: #00C515;
+    outline: none;
+}
+
+.input-marca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a3a3a;
+    color:#f1f1f1;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    padding: 10px;
+    margin: 0;
+}
+
+
+.input-marca::placeholder{
+    color:#adadad;
+    font-size: 14px;
+}
+
+.input-marca:focus{
+    border-color: #00C515;
+    outline: none;
+}
+
+.group-maior{
+    display: flex;
+
+}
+
+.maior-esquerda{
+    display: flex;
+    flex-direction: column;
+}
+
+.superior-esquerda{
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.esquerda{
+    padding-right: 5%;
+}
+
+.select-categoria{
+    display: flex;
+    background-color: #3a3a3a;
+    color:#adadad;
+    border: 2px solid transparent;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    transition: border-color 0.3s;
+}
+
+.select-categoria:focus{
+    border-color: #00C515;
+    outline: none;
+}
+
+.valor-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a3a3a;
+    color:#f1f1f1;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    padding: 5px;
+}
+
+.valor-input:focus{
+    border-color: #00C515;
+    outline: none;
+}
+
+.valor-input::placeholder{
+    color:#adadad;
+    font-size: 14px;
+}
+
+.inferior-esquerda{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+.input{
+    display: none;
+}
+
+.label-image{
+    display: flex;
+    background-color:  #3a3a3a;
+    color:#adadad;
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+
+.maior-direita{
+    margin-left: 5%;
+    margin-right: 0;
+}
+
+.descricao-input{
+    display: flex;
+    background-color: #3a3a3a;
+    color:#f1f1f1;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.descricao-input::placeholder{
+    color:#adadad;
+    font-size: 14px;
+    text-align: start;
+}
+
+.descricao-input:focus{
+    border-color: #00C515;
+    outline: none;
+}
+
+.h3_nome, .h3_categoria, .h3_valor, .h3_imagem, .h3_descrição, .h3_marca{
+    color:#f1f1f1;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.grupo-button{
+    display: flex;
+    margin: 3% 0 3% 0;
+}
+
+.button-cancelar{
+    margin-right: 70%;
+}
+
+.cancelar{    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #4b4b4b;
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    border: none;
+
+}
+
+.h3_cancelar{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #adadad;
+    margin: 0;
+}
+
+.cancelar:hover{
+    background-color: rgb(173, 16, 16);
+}
+
+.h3_publicar{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(8, 8, 8);
+    margin: 0;
+}
+
+.logo, .h3_publicar{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.publicar {
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    height: 40px;
+    width: 140px;
+    outline: none;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.publicar:disabled {
+  pointer-events: none;
+}
+
+.publicar:hover {
+  background-color: #00C515;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  .h3_publicar{
+    color: white;
+  }
+}
+
+.publicar:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+
+@media only screen and (max-width: 1199px) {
+    .nome{
+        width: 100%;
+    }
+
+    .group-nome{
+        flex-direction: column;
+    }
+
+    .marca{
+        margin-top: 3%;
+    }
+
+    .select-categoria{
+        width: 100%;
+    }
+
+    .esquerda{
+        padding-right: 0;
+    }
+
+    .superior-esquerda{
+        flex-direction: column;
+    }
+
+    .group-maior{
+        flex-direction: column;
+    }
+
+    .direita{
+        margin-top: 3%;
+    }
+
+    .maior-direita{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: 0;
+    }
+
+    .button-cancelar{
+        margin-right: 57%;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .button-cancelar{
+        margin-right: 30%;
+    }
+}

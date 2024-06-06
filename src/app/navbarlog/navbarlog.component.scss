@@ -1,10 +1,13 @@
-nav{
+nav {
     background: #1E1E1E;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 20px;
-    padding: 40px 0;   
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 2.5rem;
 }
 
 .content-logo{
@@ -40,32 +43,18 @@ a:hover{
     color:#00C515;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
-    margin-left: 10%;
-    gap:20px;
-}
-
-.content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-right: 10%;
-}
-
-.content_user{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 20px;
-    
+    width: 160px;
+    margin-left: 8%;
 }
+
 
 .content-direito{
     display: flex;
-    margin-right: 10%;
+    margin-right: 5%;
     justify-content: center;
     align-items: center;
 }
@@ -89,10 +78,8 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 20px;
-}  
-
-
+    padding-right: 50px;
+}   
 
 .name{
    display: flex;
@@ -111,4 +98,29 @@ a:hover{
     justify-content: center;
     padding-right: 5px;
     align-items: center; 
+}
+
+@media only screen and (max-width: 770px) {
+   .logo{
+    margin-left: 20px;
+    gap:5px;
+   }
+
+   .sair{
+    padding-right: 20px;
+   }
+
+   .home{
+    padding-right: 20px;
+   }
+
+   .content-direito{
+    margin-right: 0;
+   }
+
+   .user{
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+
 }

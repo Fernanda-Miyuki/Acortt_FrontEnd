@@ -1,40 +1,64 @@
-<div class="structure">
+<div class="custom-structure">
     <h1>Crie sua conta conosco</h1>
-    <div class="container">
-        <div class="buttonsForm">
-            <div #btnColor class="btnColor"></div>
+    <div class="custom-container">
+        
+        <div class="custom-buttonsForm">
+            <div #btnColor class="custom-btnColor"></div>
             <button id="btnSignin" (click)="toSignUp()">Informações</button>
             <button id="btnSignup" (click)="toSignIn()">Finalizar</button>
         </div>
-    
+
         <form #Cadastrar id="Cadastrar" [formGroup]="formRegister" (ngSubmit)="onRegisterPt1()">
-            <input class="text campoCadastro" placeholder="Nome" formControlName="name" required/>
-            <input class="text campoCadastro" placeholder="Email" formControlName="email" />
-            <input class="password campoCadastro" placeholder="Senha" formControlName="password" />
-            <input class="password campoCadastro" placeholder="Confirmar Senha" formControlName="confirmPassword" />
-    
-            <div class="divCheck">
-                <input type="checkbox" />
-                <span>Lembrar Senha</span>
+            <div class="custom-input-wrapper">
+                <input class="custom-text custom-campoCadastro" type='text' id='nome' required formControlName="name" />
+                <label for='nome' class='custom-placeholder'>Nome</label>
             </div>
-            <button type="submit" class="submit raise buttons">Continuar</button>
+            <div class="custom-input-wrapper">
+                <input class="custom-text custom-campoCadastro" type='email' id='email' required formControlName="email" />
+                <label for='email' class='custom-placeholder'>Email</label>
+            </div>
+            <div class="custom-input-wrapper">
+                <input class="custom-password custom-campoCadastro" type='password' id='senha' required formControlName="password" />
+                <label for='senha' class='custom-placeholder'>Senha</label>
+            </div>
+            <div class="custom-input-wrapper">
+                <input class="custom-password custom-campoCadastro" type='password' id='confirmarSenha' required formControlName="confirmPassword" />
+                <label for='confirmarSenha' class='custom-placeholder'>Confirmar Senha</label>
+            </div>
+
+            <div class="custom-divCheck">
+                <input type="checkbox" id="lembrarSenha"/>
+                <label for="lembrarSenha">Lembrar Senha</label>
+            </div>
+            <button type="submit" class="custom-submit custom-raise custom-buttons">Continuar</button>
         </form>
-    
+
         <form #Logar id="Logar">
-            <input class="text campoCadastro" placeholder="Telefone" />
-            <select name="Faculdade" class="select campoCadastro">
-                <option value="">Instituição de ensino</option>
-                <option value="1">Fatec Shunji Nishimura</option>
-            </select>
-    
-            <div class="divCheck">
-                <input type="checkbox" required />
-                <span>Termos e condições</span>
+            <div class="custom-input-wrapper">
+                <input class="custom-text custom-campoCadastro" type='text' id='telefone' required>
+                <label for='telefone' class='custom-placeholder'>Telefone</label>
             </div>
-            <button class="submit raise buttons">Criar conta</button>
+            <select name="Faculdade" class="custom-select custom-campoCadastro">
+                <option value="">Instituição de ensino</option>
+                <option value="1">Fatec Pompéia - Shunji Nishimura</option>
+                <option value="2">Unimar - Universidade de Marília</option>
+                <option value="3">Faip - Faculdade de Ensino Superior do Interior Paulista</option>
+                <option value="4">Unesp - Faculdade de Filosofia e Ciências</option>
+            </select>
+
+            <div class="custom-divCheck">
+                <input type="checkbox" id="termosCondicoes" required />
+                <label for="termosCondicoes">Termos e condições</label>
+            </div>
+            <button class="custom-submit custom-raise custom-buttons">Criar conta</button>
         </form>
     </div>
-    <a href="login">
-        <h6>Já tenho conta</h6>
-    </a>
+    <div class="links">
+        <a href="login" class="custom-login">
+            <h6>Já tenho conta</h6>
+        </a>
+        <a target="_blank" href="https://forms.gle/Z7w9Ze4vCnW4hjCM6">
+            <h6 class="form">Faculdade não Listada</h6>
+        </a>
+    </div>
 </div>

@@ -60,7 +60,7 @@ nav {
 }
 
 .search {
-    width: 300px;
+    width: 290px;
     height: 30px;
     border-radius: 5px 0 0 5px;
     background-color: white;
@@ -154,13 +154,11 @@ a {
         margin-left: 0;
         margin-right: 0;
     }
-    .search {
-        width: 100%;
-    }
+    
     .link {
         padding-right: 0;
         justify-content: space-around;
-        gap: 0;
+        gap: 20px;
     }
 
 

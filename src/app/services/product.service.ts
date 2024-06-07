@@ -11,6 +11,7 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   public getProducts():Observable<Product[]> {
-    return this.http.get<Product[]>('http://192.168.86.30:8080/prod');
+    //return this.http.get<Product[]>('http://192.168.86.30:8080/prod');
+    return this.http.get<Product[]>('http://192.168.86.30:8080/home');
   }
 }

@@ -1,4 +1,5 @@
-<app-navbarlog></app-navbarlog>
+<app-navbar></app-navbar>
+
 <div class="body">
     <div class="menu">
         <ul class="link_links">
@@ -11,8 +12,6 @@
             </li>
         </ul>
     </div>
-
-    
 
     <h2 class="h2_conteudo">Mais procurados em Eletrônicos e Celulares</h2>
     <div class="product-container">
@@ -32,10 +31,74 @@
                 </div>
             </a>
         </div>
+        <div class="product-card" *ngFor="let produto of lista">
+            <a href="">
+                <div class="product-tumb">
+                    <img class="img-smartphone" src="{{produto.urlImage}}" alt="image">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">Celulares</span>
+                    <h4><a href="#">{{produto.titulo}}</a></h4>
+                    <p>{{produto.local}}</p>
+                    <p>{{produto.data}}</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price">{{produto.subtitulo}}</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="product-card" *ngFor="let produto of lista">
+            <a href="">
+                <div class="product-tumb">
+                    <img class="img-smartphone" src="{{produto.urlImage}}" alt="image">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">Celulares</span>
+                    <h4><a href="#">{{produto.titulo}}</a></h4>
+                    <p>{{produto.local}}</p>
+                    <p>{{produto.data}}</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price">{{produto.subtitulo}}</div>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
-    
+
     <h2 class="h2_conteudo">Mais procurados em Notebooks</h2>
     <div class="product-container">
+        <div class="product-card" *ngFor="let produto of produtos">
+            <a href="">
+                <div class="product-tumb">
+                    <img class="img-banner" src="{{produto.urlImage}}" alt="image">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">Notebooks</span>
+                    <h4><a href="#">{{produto.titulo}}</a></h4>
+                    <p>{{produto.local}}</p>
+                    <p>{{produto.data}}</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price">{{produto.subtitulo}}</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="product-card" *ngFor="let produto of produtos">
+            <a href="">
+                <div class="product-tumb">
+                    <img class="img-banner" src="{{produto.urlImage}}" alt="image">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">Notebooks</span>
+                    <h4><a href="#">{{produto.titulo}}</a></h4>
+                    <p>{{produto.local}}</p>
+                    <p>{{produto.data}}</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price">{{produto.subtitulo}}</div>
+                    </div>
+                </div>
+            </a>
+        </div>
         <div class="product-card" *ngFor="let produto of produtos">
             <a href="">
                 <div class="product-tumb">
@@ -55,6 +118,6 @@
     </div>
 
 
-    
+
     <footer>@ Acortt Association Ltda. - Av Shunji Nishimura, 825-601, - Pompeia, SP</footer>
 </div>

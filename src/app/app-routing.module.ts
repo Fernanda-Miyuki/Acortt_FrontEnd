@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProductComponent } from './product/product.component';
+import { TelapesquisaComponent } from './telapesquisa/telapesquisa.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home' , pathMatch: 'full'},
@@ -13,11 +14,13 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component:  RegisterComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'product', component: ProductComponent }
+  { path: 'product', component: ProductComponent },
+  { path: 'telapesquisa', component: TelapesquisaComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes), FormsModule],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

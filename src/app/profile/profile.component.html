@@ -3,7 +3,7 @@
     <div class="profile_section">
         <div class="card_profile">
             <div class="photo_user">     
-                <img class="user" src="./assets/profile.svg" alt="">
+                <img class="user" src="./assets/user.jpg" alt="">
             </div>
             <div class="conteudo_profile">
                 <div class="editar">
@@ -11,13 +11,13 @@
                     <a class="editar_perfil" href="#">Editar perfil</a>
                 </div>
                 <div class="nome_user">
-                    <h2 class="name">Jeferson Jesus</h2>  
+                    <h2 class="name">Pedro Kim</h2>  
                 </div>
                 <div class="contato_user">
                     <h3 class="contato">(14) 9999-9999</h3>
                 </div>
                 <div class="email_user">
-                    <h3 class="email">jeferson.jesus@gmail.com</h3>
+                    <h3 class="email">pedro.kim@gmail.com</h3>
                 </div>
                 <div class="faculdade_user">
                     <h4 class="faculdade">Fatec Shunji Nishimura de Pompeia - SP</h4>
@@ -34,13 +34,16 @@
                 <div class="card_anuncio" *ngFor="let produto of anuncio">
                     <img class="img-smartphone" src="{{produto.urlImage}}" alt="image"> 
                     <div class="conteudo_card">
-                        <h3 class="nome-produto">{{produto.titulo}}</h3>
-                        <h2 class="valor-produto">{{produto.subtitulo}}</h2>
-                        <span class="local">{{produto.local}}</span>
-                        <span class="data">{{produto.data}}</span>
+                        <span class="product-catagory">Celulares</span>
+                        <h4><a href="#">{{produto.titulo}}</a></h4>
+                        <p>{{produto.local}}</p>
+                        <p>{{produto.data}}</p>
+                        <div class="product-bottom-details">
+                            <div class="product-price">{{produto.subtitulo}}</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    <footer>@ Acortt Association Ltda. -  Av Shunji Nishimura, 825-601, - Pompeia, SP</footer>
+    <footer>@ Acortt Association Ltda. -  Av Shunji Nishimura, 825-601, - Pompeia, SP <a class="support" target="_blank" href="https://forms.gle/ikXNfR4RLWK13KDT9">Contato</a></footer>
 </div>

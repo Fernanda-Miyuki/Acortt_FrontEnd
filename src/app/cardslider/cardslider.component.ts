@@ -6,16 +6,18 @@ import { Product } from '../models/product.model';
 @Component({
   selector: 'app-cardslider',
   templateUrl: './cardslider.component.html',
-  styleUrls: ['./cardslider.component.scss']
+  styleUrls: ['./cardslider.component.scss'],
 })
 export class CardsliderComponent implements AfterViewInit {
   @ViewChild('carousel') carousel!: SlickCarouselComponent; 
 
-  constructor(private productService: ProductService) { }
-  public computersList:Product[] = []
-  
+  constructor(private productService: ProductService) {}
+  public computersList: Product[] = [];
+  public phonesList: Product[] = [];
+
+
   computerList: any[] = [
-     {
+    {
       urlImage: '/assets/anh-nhat-PdALQmfEqvE-unsplash.jpg',
       titulo: 'Placa mãe',
       subtitulo: 'R$ 5000,00',
@@ -61,42 +63,48 @@ export class CardsliderComponent implements AfterViewInit {
 
   produtos: any[] = [
     {
-      urlImage: 'https://images.unsplash.com/photo-1659135890064-d57187f0946c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fG5vdGVib29rJTIwYXBwbGV8ZW58MHx8MHx8fDA%3D',
+      urlImage:
+        'https://images.unsplash.com/photo-1659135890064-d57187f0946c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fG5vdGVib29rJTIwYXBwbGV8ZW58MHx8MHx8fDA%3D',
       titulo: 'Samsung Notebook ',
       subtitulo: 'R$ 3000,00',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',
     },
     {
-      urlImage: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      urlImage:
+        'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       titulo: 'Notebook Dell',
       subtitulo: 'R$ 3000,00',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',
     },
     {
-      urlImage: 'https://images.unsplash.com/photo-1659135890064-d57187f0946c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fG5vdGVib29rJTIwYXBwbGV8ZW58MHx8MHx8fDA%3D',
+      urlImage:
+        'https://images.unsplash.com/photo-1659135890064-d57187f0946c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fG5vdGVib29rJTIwYXBwbGV8ZW58MHx8MHx8fDA%3D',
       titulo: 'Samsung Notebook ',
       subtitulo: 'R$ 3000,00',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',
     },
     {
-      urlImage: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      urlImage:
+        'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       titulo: 'Notebook Dell',
       subtitulo: 'R$ 3000,00',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',
     },
     {
-      urlImage: 'https://images.unsplash.com/photo-1659135890064-d57187f0946c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fG5vdGVib29rJTIwYXBwbGV8ZW58MHx8MHx8fDA%3D',
+      urlImage:
+        'https://images.unsplash.com/photo-1659135890064-d57187f0946c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fG5vdGVib29rJTIwYXBwbGV8ZW58MHx8MHx8fDA%3D',
       titulo: 'Samsung Notebook ',
       subtitulo: 'R$ 3000,00',
       local: 'Fatec',
       data: '10/05/2024 - 10:00',
     },
     {
-      urlImage: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      urlImage:
+        'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       titulo: 'Notebook Dell',
       subtitulo: 'R$ 3000,00',
       local: 'Fatec',
@@ -105,7 +113,7 @@ export class CardsliderComponent implements AfterViewInit {
   ];
 
   slickCarouselConfig = {
-    slidesToShow: 5, 
+    slidesToShow: 5,
     slidesToScroll: 1,
     dots: true,
     arrows: true,
@@ -115,35 +123,42 @@ export class CardsliderComponent implements AfterViewInit {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 4
-        }
+          slidesToShow: 4,
+        },
       },
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 3
-        }
+          slidesToShow: 3,
+        },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2
-        }
+          slidesToShow: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   ngAfterViewInit() {
-    this.productService.getProducts().subscribe((products) => {
-      this.computersList = products
-    })
+    this.productService.getPhones().subscribe((phones) => {
+      this.phonesList = phones;
+      console.warn(this.phonesList);
+    });
+
+    this.productService.getComputers().subscribe((computers) => {
+      this.computersList = computers;
+      console.warn(this.computersList);
+    });
   }
+
 
   next() {
     this.carousel.slickNext();

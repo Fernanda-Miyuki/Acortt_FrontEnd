@@ -1,25 +1,17 @@
     <div class="carousel">
+        <div *ngFor="let e of computersList">
+            <span>nome</span>
+            {{ e.prod_nome}}
+        </div>
         
-        <h2 class="h2_conteudo">Mais procurados em Eletrônicos e Celulares</h2>
-        <ngx-slick-carousel class="carousel-items" [config]="slickCarouselConfig">
-           <div ngxSlickItem class="card" *ngFor="let produto of computersList">
-            <img class="img-smartphone" src="{{produto.prod_foto}}" alt="image"> 
-                <div class="conteudo_card">
-                    <h3 class="nome-produto">{{produto.prod_nome}}</h3>
-                    <h2 class="valor-produto">{{produto.prod_preco}}</h2>
-                    <!-- <span class="local">{{produto.local}}</span> -->
-                    <span class="data">{{produto.prod_data_public}}</span>
-                </div>
-            </div>  
-        </ngx-slick-carousel>
-        <h2 class="h2_conteudo">Mais procurados em Notebooks</h2>
+        
+        <h2 class="h2_conteudo">Produtos mais procurados</h2>
         <ngx-slick-carousel class="carousel-items" [config]="slickCarouselConfig">
             <div  ngxSlickItem class="card" *ngFor="let produto of produtos">
-                <img class="img-banner" src="{{produto.urlImage}}" alt="hghg">
+                <img class="img-banner" src="{{produto.urlImage}}" alt="">
                 <div class="conteudo_card_notebook">
                     <h3 class="nome-produto">{{produto.titulo}}</h3>
-                    <h2 class="valor-produto">{{produto.subtitulo}}</h2>
-                    <span class="local">{{produto.local}}</span>
+                    <h2 class="valor-produto">{{produto.subtitulo}}</h2>>
                     <span class="data">{{produto.data}}</span>
                 </div>   
             </div>

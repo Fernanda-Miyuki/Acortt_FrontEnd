@@ -8,6 +8,7 @@ nav {
     font-weight: 400;
     font-style: normal;
     padding: 2.5rem;
+    gap: 20px;
 }
 
 .acortt{
@@ -91,7 +92,7 @@ a:hover{
     align-items: center; 
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 800px) {
    .logo{
     margin-left: 20px;
     gap:5px;
@@ -113,5 +114,17 @@ a:hover{
     padding-left: 20px;
     padding-right: 20px;
    }
+   .icone{
+    display: none;
+   }
+}
 
+@media screen and (max-width: 560px){
+    .icone{
+        display: none;
+    }
+    
+    .user{
+        display: none;
+    }
 }

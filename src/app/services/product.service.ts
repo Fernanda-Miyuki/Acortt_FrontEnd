@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { Product } from '../models/product.model';
 
 @Injectable({
@@ -10,8 +10,16 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  public getProducts():Observable<Product[]> {
-    //return this.http.get<Product[]>('http://192.168.86.30:8080/prod');
-    return this.http.get<Product[]>('http://192.168.86.30:8080/home');
+  public getPhones(): Observable<Product[]> {
+    return this.http.get<any>('http://192.168.86.30:8080/home').pipe(
+      map(response => response.celulares)
+    );
   }
+
+  public getComputers(): Observable<Product[]> {
+    return this.http.get<any>('http://192.168.86.30:8080/home').pipe(
+      map(response => response.computadores)
+);
+}
+
 }

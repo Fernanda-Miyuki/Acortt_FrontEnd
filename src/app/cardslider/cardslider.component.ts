@@ -16,7 +16,7 @@ export class CardsliderComponent implements AfterViewInit {
   public phonesList: Product[] = [];
 
 
-  computerList: any[] = [
+  lista: any[] = [
     {
       urlImage: '/assets/anh-nhat-PdALQmfEqvE-unsplash.jpg',
       titulo: 'Smartphone Samsung Galaxy',

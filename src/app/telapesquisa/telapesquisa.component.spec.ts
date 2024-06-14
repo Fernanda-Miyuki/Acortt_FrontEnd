@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { TelapesquisaComponent } from './telapesquisa.component';
 
 describe('telapesquisaComponent', () => {

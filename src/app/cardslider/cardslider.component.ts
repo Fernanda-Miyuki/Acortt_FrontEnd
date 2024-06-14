@@ -1,16 +1,23 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { SlickCarouselComponent } from 'ngx-slick-carousel';
+import { ProductService } from '../services/product.service';
+import { Product } from '../models/product.model';
 
 @Component({
   selector: 'app-cardslider',
   templateUrl: './cardslider.component.html',
-  styleUrls: ['./cardslider.component.scss']
+  styleUrls: ['./cardslider.component.scss'],
 })
 export class CardsliderComponent implements AfterViewInit {
   @ViewChild('carousel') carousel!: SlickCarouselComponent; 
 
-  lista: any[] = [
-     {
+  constructor(private productService: ProductService) {}
+  public computersList: Product[] = [];
+  public phonesList: Product[] = [];
+
+
+  computerList: any[] = [
+    {
       urlImage: '/assets/anh-nhat-PdALQmfEqvE-unsplash.jpg',
       titulo: 'Smartphone Samsung Galaxy',
       subtitulo: 'R$ 5000,00',
@@ -100,7 +107,7 @@ export class CardsliderComponent implements AfterViewInit {
   ];
 
   slickCarouselConfig = {
-    slidesToShow: 5, 
+    slidesToShow: 5,
     slidesToScroll: 1,
     dots: true,
     arrows: true,
@@ -110,35 +117,42 @@ export class CardsliderComponent implements AfterViewInit {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 4
-        }
+          slidesToShow: 4,
+        },
       },
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 3
-        }
+          slidesToShow: 3,
+        },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2
-        }
+          slidesToShow: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
-  constructor() { }
-
   ngAfterViewInit() {
-    console.log(this.carousel);
+    this.productService.getPhones().subscribe((phones) => {
+      this.phonesList = phones;
+      console.warn(this.phonesList);
+    });
+
+    this.productService.getComputers().subscribe((computers) => {
+      this.computersList = computers;
+      console.warn(this.computersList);
+    });
   }
+
 
   next() {
     this.carousel.slickNext();

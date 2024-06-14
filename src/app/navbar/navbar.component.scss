@@ -8,6 +8,7 @@ nav {
     font-weight: 400;
     font-style: normal;
     padding: 2.5rem;
+    gap: 20px;
 }
 
 .acortt {
@@ -26,8 +27,8 @@ nav {
     align-items: center;
     justify-content: center;
     width: 50px;
-    height: 33px;
-    border-radius: 5px;
+    height: 30px;
+    border-radius: 0 5px 5px 0;
     background-color: #00C515;
     border: none;
     font-size: 14px;
@@ -38,35 +39,32 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    width: 160px;
-    //margin-left: 3rem;
+    width: 370px;
+    
 }
 
 .input {
     display: flex;
     align-items: center;
     justify-content: center;
-    //margin: 0 10px 0 20px;
-    gap: 10px;
+    
 
 }
 
 .link {
     display: flex;
-    //justify-content: center;
-    //padding-right: 10%;
     width: 260px;
+    margin-right: 110px;
     justify-content: space-between;
-    //gap: 80px;
+    gap: 20px;
 }
 
 .search {
-    width: 300px;
+    width: 290px;
     height: 30px;
-    border-radius: 5px;
-    border: 1px solid;
+    border-radius: 5px 0 0 5px;
     background-color: white;
-    border: 2px solid #00C515;
+    border: 1px solid #00C515;
 }
 
 input::placeholder {
@@ -103,6 +101,7 @@ a {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
+    margin-right: px;
 }
 
 .criar_conta:hover {
@@ -137,6 +136,7 @@ a {
     }
 }
 
+
 @media only screen and (max-width: 768px) {
     .nav {
         flex-direction: column;
@@ -144,27 +144,27 @@ a {
         padding: 10px 0;
     }
     .acortt {
-        font-size: 16px;
-        margin-bottom: 10px;
+        font-size: 18px;
+        
     }
     .logo {
-        padding-left: 0;
-        margin-bottom: 10px;
+        padding-left: 0; 
     }
+    }
+
     .input {
         margin-left: 0;
         margin-right: 0;
     }
-    .search {
-        width: 100%;
-    }
+    
     .link {
         padding-right: 0;
         justify-content: space-around;
-        gap: 0;
+        gap: 20px;
     }
-    
-}@media only screen and (max-width: 768px) {
+
+
+@media only screen and (max-width: 830px) {
     .nav {
         flex-direction: column;
         align-items: center;
@@ -172,17 +172,22 @@ a {
     }
     .acortt {
         font-size: 18px;
-        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
     }
     .logo {
         padding-left: 0;
-        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
     }
     .input {
         margin: 10px; 
     }
     .search {
-        width: calc(100% - 20px); 
+        display: none; 
+    }
+    .botao_pesquisa{
+        display: none;
     }
     .link {
         padding-right: 0;
@@ -190,3 +195,5 @@ a {
         gap: 20px; 
     }
 }
+
+

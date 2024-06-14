@@ -3,6 +3,7 @@
     // display: flex;
     // flex-direction: column;
     background: #1E1E1E;
+    gap: 20px;
 }
 
 a {
@@ -43,8 +44,10 @@ a:hover {
     font-family: "Michroma", sans-serif;
     padding-left: 20px; 
     height: 55px;
+    margin-top: 8px;
     padding: 0 10%;  
     box-shadow: #161616 0 0 4px 3px;
+    gap: 20px;
 }
 
 .icons-menu {   
@@ -181,3 +184,13 @@ footer{
         align-items: center;
     }
 }
+
+@media screen and (max-width: 710px){
+    .icons-menu{
+        display: none;
+    }
+}
+
+
+
+

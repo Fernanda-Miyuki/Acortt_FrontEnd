@@ -1,123 +1,174 @@
 <app-navbar></app-navbar>
 
 <div class="body">
-    <div class="menu">
-        <ul class="link_links">
-            <li><img class="icons-menu" src="./assets/monitor (3).svg" alt=""><a class="nav-list" href="#">Notebooks</a>
-            </li>
-            <li><img class="icons-menu" src="./assets/smartphone.svg" alt=""><a class="nav-list" href="#">Celulares</a>
-            </li>
-            <li><img class="icons-menu" src="./assets/cpu.svg" alt=""><a class="nav-list" href="#">Componentes</a></li>
-            <li><img class="icons-menu" src="./assets/headphones.svg" alt=""><a class="nav-list" href="#">Acessórios</a>
-            </li>
-        </ul>
+  <div class="menu">
+    <ul class="link_links">
+      <li>
+        <img class="icons-menu" src="./assets/monitor (3).svg" alt="" /><a
+          class="nav-list"
+          href="#"
+          >Notebooks</a
+        >
+      </li>
+      <li>
+        <img class="icons-menu" src="./assets/smartphone.svg" alt="" /><a
+          class="nav-list"
+          href="#"
+          >Celulares</a
+        >
+      </li>
+      <li>
+        <img class="icons-menu" src="./assets/cpu.svg" alt="" /><a
+          class="nav-list"
+          href="#"
+          >Componentes</a
+        >
+      </li>
+      <li>
+        <img class="icons-menu" src="./assets/headphones.svg" alt="" /><a
+          class="nav-list"
+          href="#"
+          >Acessórios</a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <h2 class="h2_conteudo">Mais procurados em Eletrônicos e Celulares</h2>
+  <div class="product-container">
+    <div class="product-card" *ngFor="let produto of lista">
+      <a href="">
+        <div class="product-tumb">
+          <img
+            class="img-smartphone"
+            src="{{ produto.urlImage }}"
+            alt="image"
+          />
+        </div>
+        <div class="product-details">
+          <span class="product-catagory">Celulares</span>
+          <h4>
+            <a href="#">{{ produto.titulo }}</a>
+          </h4>
+          <p>{{ produto.local }}</p>
+          <p>{{ produto.data }}</p>
+          <div class="product-bottom-details">
+            <div class="product-price">{{ produto.subtitulo }}</div>
+          </div>
+        </div>
+      </a>
     </div>
-
-    <h2 class="h2_conteudo">Mais procurados em Eletrônicos e Celulares</h2>
-    <div class="product-container">
-        <div class="product-card" *ngFor="let produto of lista">
-            <a href="">
-                <div class="product-tumb">
-                    <img class="img-smartphone" src="{{produto.urlImage}}" alt="image">
-                </div>
-                <div class="product-details">
-                    <span class="product-catagory">Celulares</span>
-                    <h4><a href="#">{{produto.titulo}}</a></h4>
-                    <p>{{produto.local}}</p>
-                    <p>{{produto.data}}</p>
-                    <div class="product-bottom-details">
-                        <div class="product-price">{{produto.subtitulo}}</div>
-                    </div>
-                </div>
-            </a>
+    <div class="product-card" *ngFor="let produto of lista">
+      <a href="">
+        <div class="product-tumb">
+          <img
+            class="img-smartphone"
+            src="{{ produto.urlImage }}"
+            alt="image"
+          />
         </div>
-        <div class="product-card" *ngFor="let produto of lista">
-            <a href="">
-                <div class="product-tumb">
-                    <img class="img-smartphone" src="{{produto.urlImage}}" alt="image">
-                </div>
-                <div class="product-details">
-                    <span class="product-catagory">Celulares</span>
-                    <h4><a href="#">{{produto.titulo}}</a></h4>
-                    <p>{{produto.local}}</p>
-                    <p>{{produto.data}}</p>
-                    <div class="product-bottom-details">
-                        <div class="product-price">{{produto.subtitulo}}</div>
-                    </div>
-                </div>
-            </a>
+        <div class="product-details">
+          <span class="product-catagory">Celulares</span>
+          <h4>
+            <a href="#">{{ produto.titulo }}</a>
+          </h4>
+          <p>{{ produto.local }}</p>
+          <p>{{ produto.data }}</p>
+          <div class="product-bottom-details">
+            <div class="product-price">{{ produto.subtitulo }}</div>
+          </div>
         </div>
-        <div class="product-card" *ngFor="let produto of lista">
-            <a href="">
-                <div class="product-tumb">
-                    <img class="img-smartphone" src="{{produto.urlImage}}" alt="image">
-                </div>
-                <div class="product-details">
-                    <span class="product-catagory">Celulares</span>
-                    <h4><a href="#">{{produto.titulo}}</a></h4>
-                    <p>{{produto.local}}</p>
-                    <p>{{produto.data}}</p>
-                    <div class="product-bottom-details">
-                        <div class="product-price">{{produto.subtitulo}}</div>
-                    </div>
-                </div>
-            </a>
-        </div>
+      </a>
     </div>
-
-    <h2 class="h2_conteudo">Mais procurados em Notebooks</h2>
-    <div class="product-container">
-        <div class="product-card" *ngFor="let produto of produtos">
-            <a href="">
-                <div class="product-tumb">
-                    <img class="img-banner" src="{{produto.urlImage}}" alt="image">
-                </div>
-                <div class="product-details">
-                    <span class="product-catagory">Notebooks</span>
-                    <h4><a href="#">{{produto.titulo}}</a></h4>
-                    <p>{{produto.local}}</p>
-                    <p>{{produto.data}}</p>
-                    <div class="product-bottom-details">
-                        <div class="product-price">{{produto.subtitulo}}</div>
-                    </div>
-                </div>
-            </a>
+    <div class="product-card" *ngFor="let produto of lista">
+      <a href="">
+        <div class="product-tumb">
+          <img
+            class="img-smartphone"
+            src="{{ produto.urlImage }}"
+            alt="image"
+          />
         </div>
-        <div class="product-card" *ngFor="let produto of produtos">
-            <a href="">
-                <div class="product-tumb">
-                    <img class="img-banner" src="{{produto.urlImage}}" alt="image">
-                </div>
-                <div class="product-details">
-                    <span class="product-catagory">Notebooks</span>
-                    <h4><a href="#">{{produto.titulo}}</a></h4>
-                    <p>{{produto.local}}</p>
-                    <p>{{produto.data}}</p>
-                    <div class="product-bottom-details">
-                        <div class="product-price">{{produto.subtitulo}}</div>
-                    </div>
-                </div>
-            </a>
+        <div class="product-details">
+          <span class="product-catagory">Celulares</span>
+          <h4>
+            <a href="#">{{ produto.titulo }}</a>
+          </h4>
+          <p>{{ produto.local }}</p>
+          <p>{{ produto.data }}</p>
+          <div class="product-bottom-details">
+            <div class="product-price">{{ produto.subtitulo }}</div>
+          </div>
         </div>
-        <div class="product-card" *ngFor="let produto of produtos">
-            <a href="">
-                <div class="product-tumb">
-                    <img class="img-banner" src="{{produto.urlImage}}" alt="image">
-                </div>
-                <div class="product-details">
-                    <span class="product-catagory">Notebooks</span>
-                    <h4><a href="#">{{produto.titulo}}</a></h4>
-                    <p>{{produto.local}}</p>
-                    <p>{{produto.data}}</p>
-                    <div class="product-bottom-details">
-                        <div class="product-price">{{produto.subtitulo}}</div>
-                    </div>
-                </div>
-            </a>
-        </div>
+      </a>
     </div>
+  </div>
 
+  <h2 class="h2_conteudo">Mais procurados em Notebooks</h2>
+  <div class="product-container">
+    <div class="product-card" *ngFor="let produto of produtos">
+      <a href="">
+        <div class="product-tumb">
+          <img class="img-banner" src="{{ produto.urlImage }}" alt="image" />
+        </div>
+        <div class="product-details">
+          <span class="product-catagory">Notebooks</span>
+          <h4>
+            <a href="#">{{ produto.titulo }}</a>
+          </h4>
+          <p>{{ produto.local }}</p>
+          <p>{{ produto.data }}</p>
+          <div class="product-bottom-details">
+            <div class="product-price">{{ produto.subtitulo }}</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="product-card" *ngFor="let produto of produtos">
+      <a href="">
+        <div class="product-tumb">
+          <img class="img-banner" src="{{ produto.urlImage }}" alt="image" />
+        </div>
+        <div class="product-details">
+          <span class="product-catagory">Notebooks</span>
+          <h4>
+            <a href="#">{{ produto.titulo }}</a>
+          </h4>
+          <p>{{ produto.local }}</p>
+          <p>{{ produto.data }}</p>
+          <div class="product-bottom-details">
+            <div class="product-price">{{ produto.subtitulo }}</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="product-card" *ngFor="let produto of produtos">
+      <a href="">
+        <div class="product-tumb">
+          <img class="img-banner" src="{{ produto.urlImage }}" alt="image" />
+        </div>
+        <div class="product-details">
+          <span class="product-catagory">Notebooks</span>
+          <h4>
+            <a href="#">{{ produto.titulo }}</a>
+          </h4>
+          <p>{{ produto.local }}</p>
+          <p>{{ produto.data }}</p>
+          <div class="product-bottom-details">
+            <div class="product-price">{{ produto.subtitulo }}</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 
-
-    <footer>@ Acortt Association Ltda. - Av Shunji Nishimura, 825-601, - Pompeia, SP</footer>
+  <footer>
+    @ Acortt Association Ltda. - Av Shunji Nishimura, 825-601, - Pompeia, SP
+    <a
+      class="support"
+      target="_blank"
+      href="https://forms.gle/ikXNfR4RLWK13KDT9"
+      >Contato</a
+    >
+  </footer>
 </div>

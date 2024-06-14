@@ -11,17 +11,6 @@ nav {
     gap: 20px;
 }
 
-.acortt {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 24px;
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-}
-
 .botao_pesquisa {
     display: flex;
     align-items: center;
@@ -34,13 +23,23 @@ nav {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
 }
+.acortt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
 
 .logo {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    width: 370px;
-    
+    margin: 0 10px 0 0;
+    padding-left: 10%;
+    gap:20px;
 }
 
 .input {
@@ -101,12 +100,14 @@ a {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    margin-right: px;
+    transition: ease-in-out 0.5s;
 }
 
 .criar_conta:hover {
     box-shadow: 0 0 4px 3px #00C515;
+    transition: ease-in-out 0.5s;
 }
+
 
 a {
     color: white;
@@ -123,13 +124,13 @@ a {
     border: none;
     font-size: 14px;
     font-style: normal;
-
+    transition: ease-in-out 0.5s;
 }
 
 .entrar:hover {
     background-color: transparent;
     border: 1px solid #00C515;
-
+    transition: ease-in 0.5s;
     a,
     img {
         color: white;

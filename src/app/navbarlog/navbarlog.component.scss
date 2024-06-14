@@ -12,7 +12,6 @@ nav {
 }
 
 
-
 h2{
     color: white;
 }
@@ -30,13 +29,6 @@ h2{
     font-family: "Michroma", sans-serif;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    margin: 0 10px 0 0;
-    padding-left: 10%;
-    gap:20px;
-}
 
 .acortt{
     display: flex;
@@ -56,18 +48,20 @@ a{
     align-items: center;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
+    transition: ease-in-out 0.5s;
 }
 
 a:hover{
+    transition: ease-in 0.5s;
     color:#00C515;
 }
 
-.logo {
+.logo{
     display: flex;
     justify-content: center;
-    gap: 20px;
-    width: 160px;
-    margin-left: 8%;
+    margin: 0 10px 0 0;
+    padding-left: 10%;
+    gap:20px;
 }
 
 

@@ -33,22 +33,41 @@ a:hover {
     align-items: center;
 }
 
-.link_links {
+.link_links{
     display: flex;
     list-style: none;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     background-color: #333333;
-    font-size: 14px;
-    font-family: "Michroma", sans-serif;
-    padding-left: 20px; 
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    padding-left:20px; 
     height: 55px;
-    margin-top: 8px;
-    padding: 0 10%;  
+    padding: 0 10%;
     box-shadow: #161616 0 0 4px 3px;
-    gap: 20px;
+    transition: font-size 0.3s ease-in-out;
 }
+.nav-list{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+}
+
+.nav-list:hover {
+    color: #00C515;
+    transition: ease 1s;
+}
+
+.nav-list {
+    font-size: 15px;
+    transition: font-size 0.3s ease-in-out; 
+}
+
+.nav-list:hover {
+    font-size: 16px; 
+}
+
 
 .icons-menu {   
     padding: 10px;
@@ -164,7 +183,7 @@ a:hover {
 
 
 footer{
-      display: flex;
+    display: flex;
     color: black;
     align-items: center;
     justify-content: center;
@@ -175,9 +194,15 @@ footer{
     width: 100%;
     height: 5px;
     padding: 20px 0 20px 0;
-    margin-top:25px;
-}
-
+    margin-top:20px;
+  }
+  
+  a.support{
+    margin-left:10px ;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+  }
 
 @media screen and (min-width: 768px) {
     .banner {

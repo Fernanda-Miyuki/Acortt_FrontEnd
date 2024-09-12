@@ -1,6 +1,3 @@
-
-# Acortt FrontEnd
-
 ## Descrição
 O **Acortt** é uma plataforma web desenvolvida durante um programa de capacitação na **Fatec Shunji Nishimura**. O objetivo principal do projeto é facilitar a interação entre estudantes, permitindo que eles possam buscar e vender aparelhos eletrônicos usados dentro do ambiente acadêmico. A plataforma visa criar uma comunidade de compra e venda segura e acessível dentro da faculdade.
 
